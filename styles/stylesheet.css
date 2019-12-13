@@ -35,13 +35,13 @@ nav a:hover{
 
 
 .content{
-    background-color: white;
-    margin-top: 20px;
-    padding: 20px;
 
 }
 
 footer{
     background-color:white;
-    overflow: auto;
+}
+
+.col{
+    background-color:white; 
 }
