@@ -33,4 +33,15 @@ nav a:hover{
     border-radius: 50%;
   }
 
-  
+
+.content{
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px;
+
+}
+
+footer{
+    background-color:white;
+    overflow: auto;
+}
