@@ -16,22 +16,32 @@
         Nguyen Hong Duc
         </nav>
         <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#news">Portfolio</a></li>
+        <li><a class="active" href="#home" onclick = "getContent('intro')">Home</a></li>
+        <li><a href="#news"  onclick = "getContent('test')">Portfolio</a></li>
         <li><a href="#contact">Projects</a></li>
         <li><a href="#about">Contact</a></li>
         </ul>
 
+        
         <div style="margin-left:15%;padding:1px 16px;">
             <div id= "rdiv">
+            </div>
+        </div>
+
+        <div id = "test">This is a test</div>
+
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
+<!--
                 <div class = "row">
                     <br>
                     <div class="col">
                         <img src = "assests/pic.png" alt = "profile" width = "100%" height = "100%">
                     </div>
-                    <div class = "col">
+                    <div  class = "col">
                         <h1>Hi</h1>
-                        <p>
+                        <p id = "intro">
                             2nd-year Computer Science student at Ryerson University with an interest and enthusiastic
                             attitude towards programming. After a few years of learning and working on various projects, 
                             I have attained specific skill sets and understanding of web development, data management, data
@@ -41,7 +51,4 @@
                         </p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </body>
-</html>
+                -->
