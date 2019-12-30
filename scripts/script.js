@@ -42,7 +42,3 @@ function changeDisplay(id){
 
 }
 
-
-/**
- * change all display to none 
- */
