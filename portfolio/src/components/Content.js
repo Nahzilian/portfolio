@@ -18,12 +18,12 @@ export class Content extends Component {
         return (
             <div id = "banner">
                 
-                <div className = "container">
+                
                     
                     <div className = "imgCont">
                         <img src={frontimg}  alt="Test" width = "100%" height ="100%" />
                     </div>
-
+                    <div className = "container">
                     <div>
                         <i onClick = {this.clicked} className="fas fa-circle-notch fa-5x"id = "icon"></i>
                         <div id = "panel">
@@ -31,8 +31,9 @@ export class Content extends Component {
                         </div>    
                     </div>
                     
+                    
                     <div className="centered">
-                        <h1>Duc Nguyen</h1>
+                            <h1>Duc Nguyen</h1>
                         <div>
                             2nd year student at Ryerson University
                         </div>

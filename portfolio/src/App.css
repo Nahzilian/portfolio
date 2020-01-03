@@ -64,15 +64,13 @@
   padding:0px;
 }
 
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
+.bigboi {
+  margin-top: 5%;
 }
 
 .centered {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color:white;
@@ -83,10 +81,11 @@
   background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
 }
 
+/*
 .imgCont{
   filter: blur(8px);
   
-}
+}*/
 
 #panel{
   background-color: red;
