@@ -150,22 +150,17 @@ body {
 
 
 #home{
-    position: absolute;
     display: block;
 }
 #projects{
-    position: absolute;
     display: none;
 }
 #about{
-    position: absolute;
     display: none;
 }
 #contact{
-    position: absolute;
     display: none;
 }
 #education{
-    position: absolute;
     display: none;
 }
