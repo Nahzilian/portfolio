@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Duc Nguyen</title>
+        <link rel = "stylesheet" href = "style/style.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+        rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=latin-ext,vietnamese" rel="stylesheet">
+    </head>
+    <body>
+        <h1 style = "font-family: 'Pacifico', cursive;">Duc Nguyen</h1>
+        <div id="circularMenu1" class="circular-menu circular-menu-left active">
+
+            <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <menu class="items-wrapper">
+                <a href="#" class="menu-item fa fa-home" onclick = "swap('home')"></a>
+                <a href="#" class="menu-item fa fa-flask" onclick = "swap('projects')"></a>
+                <a href="#" class="menu-item fa fa-user" onclick = "swap('about')"></a>
+                <a href="#" class="menu-item fa fa-phone" onclick = "swap('contact')"></a>
+            </menu>
+
+        </div>
+
+        <!--
+            Structure
+                Home
+                Project
+                Education
+                About
+                Contact
+        -->
+        <div id = "home">
+            <div>
+                <!--SVG pic goes here-->
+                
+            </div>
+            <div>
+                <!--Introduction goes here-->
+            </div>
+        </div>
+
+        <div id = "projects">
+        Hi2
+        </div>
+
+        <div id = "about">
+            <div>
+                <!--Skill goes here-->
+                h4
+            </div>
+            <div>
+                <!--Resume goes here-->
+                h5
+            </div>
+        </div>
+
+        <div id = "contact">
+
+        </div>
+
+
+
+        <script src = 'scripts/script.js'></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+
+</html>
