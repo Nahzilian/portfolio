@@ -1,5 +1,6 @@
 body {
-    background-color: #EDEDED;
+    background-color: white;
+    
   }
   .circular-menu {
     position: fixed;
@@ -151,6 +152,9 @@ body {
 
 #home{
     display: block;
+    background-image: url('bg.png');
+    padding-bottom: 20%;
+    padding-left: 25px;
 }
 #projects{
     display: none;
@@ -164,3 +168,62 @@ body {
 #education{
     display: none;
 }
+
+#context{
+  width:40% ;
+  color:white;
+  font-size: 60px;
+  padding-top:10%;
+  
+}
+
+/*----------------Span------------------*/
+
+#span1{
+  
+  font-family: 'Abril Fatface', cursive;
+}
+#span2{
+  font-family: 'Lobster', cursive;
+}
+#span3,#span4{
+  font-family: 'Girassol', cursive;
+}
+
+#p1{ 
+  background-image: linear-gradient(to right top, #3620ff, #571fff, #6e1eff, #811dff, #921eff, #724bff, #5263ff, #3874ff, #0090ff, #00a8ff, #00bcff, #20cfff);
+  color:white;
+  padding:30px;
+  border: none;
+}
+#p2{
+  background-image: linear-gradient(to right top, #ffa35d, #ff8364, #f96475, #e64c8a, #c440a0, #a857c3, #796dde, #007fee, #00a1fb, #00bbe5, #00d0ba, #50de8b);
+  color:white;
+  padding:30px;
+  border: none;
+}
+#p3{
+  background-image: linear-gradient(to right top, #02fff7, #00f4df, #00e9c6, #00dead, #00d293, #00c295, #00b193, #00a18f, #008691, #006b8a, #004f7a, #013361);
+  color:white;
+  padding:30px;
+  border: none;
+}
+div.card {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  border-radius: 25px;
+}
+
+#c1,#c2,#c3{
+  display: none;
+}
+ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+.button-box {
+  text-align:center;
+  margin-top:20px;
+ }

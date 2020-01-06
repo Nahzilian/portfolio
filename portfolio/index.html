@@ -6,10 +6,12 @@
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
         rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=latin-ext,vietnamese" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Girassol|Indie+Flower|Lobster&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
        
     </head>
     <body>
-        <h1 style = "font-family: 'Pacifico', cursive;">Duc Nguyen</h1>
+        <h2 style = "font-family: 'Pacifico', cursive; color: ;">Duc Nguyen</h2>
         <div id="circularMenu1" class="circular-menu circular-menu-left active">
 
             <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
@@ -34,27 +36,122 @@
                 Contact
         -->
         <div id = "home">
-            <img src="bg.png" alt="bg" width = "100%" height = "100%">
-            Hi! My name is Duc Nguyen and I am a 2nd year Computer Science student.         
+                <div id = "context">
+                    <span id = "span1">Hi!
+                    My name is </span><span id = "span2">Duc Nguyen</span> 
+                    and I am a<span id = "span3"> 2nd year </span> 
+                    <span id = "span4">Computer Science student.</span>   
+                </div>
         </div>
 
         <div id = "projects">
-        Hi2
+            
+            
+            <div class = "container">
+                <br>
+                <div style = "text-align: center; font-size: 60px; font-family: 'Lobster', cursive;">
+                    MY PROJECTS
+                </div>
+                <hr>
+                <div class = "row">
+
+                
+                
+                <!--Card goes here-->
+                
+                <!--Card goes here-->
+                <div class = "col">
+                    <div class="card" id = "p2" onclick = "openDiv('c2')">    
+                        <div class="container">
+                            <h4><b>Term project</b></h4>
+                            <p>Web development course project</p>
+                        </div>
+                        <div id = "c2">
+                            <hr>
+                            <h6>Details:</h6>
+                            <p></p>
+                            <hr>
+                            <h6>Framework used:</h6>
+                            <ul>
+                                <li>Django</li>
+                                <li>Reactjs</li>
+                                <li>Bootstrap</li>
+                                <li>Nodejs</li>
+                            </ul>
+                                <a href = "#" style = "color:white;"><button type="button" class="btn btn-dark">View on Github</button></a>
+                                <p style = "margin-bottom: 7px;">or</p>
+                                <a href = "#" style = "color:white;"><button type="button" class="btn btn-dark">Visit website</button></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class = "col">
+                    <div class="card" id = "p1" onclick = "openDiv('c1')">
+                        <div class="container">
+                            <h4><b>VBiz</b></h4>
+                            <p>Online web service. (In progress)</p>
+                        </div>
+                        <div id = "c1">
+                            <hr>
+                            <h6>Details:</h6>
+                            <p></p>
+                            <hr>
+                            <h6>Framework used:</h6>
+                            <ul>
+                                <li>Django</li>
+                                <li>Reactjs</li>
+                                <li>Python</li>
+                                <li>Bootstrap</li>
+                                <li>MVC pattern</li>
+                                <li>C#.net</li>
+                                <li>Nodejs</li>
+                            </ul>
+                                <a href = "#" style = "color:white;"><button type="button" class="btn btn-dark">View on Github</button></a>
+                                <p style = "margin-bottom: 7px;">or</p>
+                                <a href = "#" style = "color:white;"><button type="button" class="btn btn-dark">Visit website</button></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--Card goes here-->
+                <div class = "col">
+                    <div class="card"  id = "p3" onclick = "openDiv('c3')">
+                        <div class="container">
+                            <h4><b>Vibe</b></h4>
+                            <p>Side project for practice. (In progress)</p>
+                        </div>
+                        <div id = "c3">
+                            <hr>
+                            <h6>Details:</h6>
+                            <p></p>
+                            <hr>
+                            <h6>Framework used:</h6>
+                            <ul>
+                                <li>Django</li>
+                                <li>Reactjs</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                                <a href = "#" style = "color:white;"><button type="button" class="btn btn-dark">View on Github</button></a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
 
         <div id = "about">
             <div>
                 <!--Skill goes here-->
-                h4
             </div>
             <div>
                 <!--Resume goes here-->
-                h5
             </div>
         </div>
 
         <div id = "contact">
-
+            
         </div>
 
 
