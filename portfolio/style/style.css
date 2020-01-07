@@ -1,6 +1,6 @@
+
 body {
     background-color: white;
-    
   }
   .circular-menu {
     position: fixed;
@@ -209,21 +209,61 @@ body {
   border: none;
 }
 div.card {
-  width: 250px;
+  width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   border-radius: 25px;
 }
 
-#c1,#c2,#c3{
+#c2,#c3{
   display: none;
 }
+
+#c1,#c2,#c3{
+  padding: 20px;
+}
+/*
 ul {
   list-style-type: none;
   text-align: left;
 }
+*/
 
-.button-box {
-  text-align:center;
-  margin-top:20px;
- }
+.displayDiv{
+  float:right;
+  display: block;
+  width: 65%;
+  border-style: solid;
+  height:100%;
+  border-width: 2px;
+  border-radius: 25px;
+}
+.row{
+  float:left;
+  width:30%;
+}
+
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
