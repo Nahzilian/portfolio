@@ -1,220 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
     <head>
-        <title>Duc Nguyen</title>
+        <title>Duc Nguyen Portfolio</title>
         <link rel = "stylesheet" href = "style/style.css">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <meta charset = "UTF-8">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
         rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=latin-ext,vietnamese" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Girassol|Indie+Flower|Lobster&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/ab82d81c79.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <h2 style = "font-family: 'Pacifico', cursive; color: ;">Duc Nguyen</h2>
-        <div id="circularMenu1" class="circular-menu circular-menu-left active">
-
-            <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
-                <i class="fa fa-bars"></i>
-            </a>
-
-            <menu class="items-wrapper">
-                <a href="#" class="menu-item fa fa-home" onclick = "swap('home')"></a>
-                <a href="#" class="menu-item fa fa-flask" onclick = "swap('projects')"></a>
-                <a href="#" class="menu-item fa fa-user" onclick = "swap('about')"></a>
-                <a href="#" class="menu-item fa fa-phone" onclick = "swap('contact')"></a>
-            </menu>
-
+        <div id = "navbar">
+            <i class="fa fa-bars"></i>
         </div>
-
-        <!--
-            Structure
-                Home
-                Project
-                Education
-                About
-                Contact
-        -->
         <div id = "home">
-                <div id = "context">
-                    <span id = "span1">Hi!
-                    My name is </span><span id = "span2">Duc Nguyen</span> 
-                    and I am a<span id = "span3"> 2nd year </span> 
-                    <span id = "span4">Computer Science student.</span>   
-                </div>
+            <div id = "banner"></div>
+            <div class="bg-text">
+                <h1>Hi! I am Duc Nguyen</h1>
+                <p>2nd Year Computer Science Student <span class = "blink">_</span></p>
+            </div>          
         </div>
 
-        <div id = "projects">  
-            
-                <br>
-                <div style = "text-align: center; font-size: 60px; font-family: 'Lobster', cursive;">
-                    MY PROJECTS
-                </div>
-                <hr>
-                <div class = "row">
-
-                    <!--Card goes here-->
-
-                        <div class="card" id = "p1" onclick = "openDiv('c1')">    
-                            <div class="container">
-                                <h4><b>Term project</b></h4>
-                                <p>Web development course project</p>
-                            </div>
-
-                        </div>
-
-                    <br>
-
-                        <div class="card" id = "p2" onclick = "openDiv('c2')">
-                            <div class="container">
-                                <h4><b>VBiz</b></h4>
-                                <p>Online web service. (In progress)</p>
-                            </div>
-                        </div>
-
-
-
-                    <br>
-                    <!--Card goes here-->
-                        <div class="card"  id = "p3" onclick = "openDiv('c3')">
-                            <div class="container">
-                                <h4><b>Vibe</b></h4>
-                                <p>Side project for practice. (In progress)</p>
-                            </div>
-                        </div>
-                    
-                    
-
-
-                </div>
-                <div class = "displayDiv">
-                    <div id = "c1">
-                        <h1>Term project</h1>
-                        <hr>
-                        <h4>Details:</h4>
-                        <p>Team project for the final web development course with the idea of sharing photos online.</p>
-                        <h4>Framework used:</h4>
-                        <ul>
-                            <li>Reactjs</li>
-                            <li>Django</li>
-                            <li>Bootstrap styling</li>
-                        </ul>
-                    </div>
-                    <div id = "c2">
-                        <h1>VBiz</h1>
-                        <hr>
-                        <h4>Details:</h4>
-                        <p>Dynamic list of companies that allow smart search with flexible filters based on users’ data</p>
-                        <h4>Framework used:</h4>
-                        <ul>
-                            <li>Reactjs</li>
-                            <li>Django</li>
-                            <li>Bootstrap styling</li>
-                        </ul>
-                    </div>
-                    <div id = "c3">
-                        <h1>Vibe</h1>
-                        <hr>
-                        <h4>Details:</h4>
-                        <p>Side projects to help me understand more about React JS, Django, APIs and MongoDB.</p>
-                        <h4>Framework used:</h4>
-                        <ul>
-                            <li>Reactjs</li>
-                            <li>Django</li>
-                            <li>Bootstrap styling</li>
-                        </ul>
-                    </div>
-                    
-                </div>
-            
-        </div>
 
         <div id = "about">
-            <h2>About</h2>
-            <h3>Summary</h3>
-            <hr>
-            <p>As an enthusiastic computer science who always thrives for knowledge and experience, 
-                looking for an internship that paves a path for me to enhance my background and utilize
-             my skills on the way to become a world-class developer.
+            <h1>About <span class = "blink">_</span></h1>
+            <p>
+                As an enthusiastic computer science who always thrives
+                 for knowledge and experience, an internship that will 
+                 allow me to learn and understand the concept of my 
+                 career path, website development, enhance my
+                  problem-solving and other technical skills and to 
+                  utilize my experience and knowledge.  
             </p>
-            <h3>Technical skills</h3>
-            <!--
-                Language: 
-                Database: SQL, MySQL, SQLite, MongoDB
-                Framework: React JS, Django, .Net, Angular, NodeJS
-                Operating System: Windows, Unix
-            -->
-            <button class="collapsible">Programming languages</button>
-            <div class="content">
-            <p>HTML, CSS, Java, JavaScript, Python, C, C#, ASP, Perl, Ruby, PHP, Ajax, jQuery</p>
-            </div>
-            <button class="collapsible">Databases</button>
-            <div class="content">
-            <p>SQL, MySQL, SQLite, MongoDB</p>
-            </div>
-            <button class="collapsible">Framework</button>
-            <div class="content">
-            <p>React JS, Django, .Net, Angular, NodeJS</p>
-            </div>
-            <button class="collapsible">Operating System</button>
-            <div class="content">
-            <p>Windows, Unix</p>
-            </div>
-
-            <script>
-                var coll = document.getElementsByClassName("collapsible");
-                var i;
-
-                for (i = 0; i < coll.length; i++) {
-                coll[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.maxHeight){
-                    content.style.maxHeight = null;
-                    } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                    }
-                });
-                }
-            </script>
-            <hr>
-            <h3>Education</h3>
-            <hr>
-            <h3>Download resume</h3>
-
         </div>
+        <div class = "aboutcontent">
+            <div class="tab">
+                <button class="tablinks tab-odd" onclick="openDiv(event, 'tskills')">Technical Skills</button>
+                <button class="tablinks tab-even" onclick="openDiv(event, 'traits')">Personal traits</button>
+                <button class="tablinks tab-odd" onclick="openDiv(event, 'education')">Education</button>
+                <button class="tablinks tab-even" onclick="openDiv(event, 'extracurricular')">Extracurricular</button>
+                <button class="tablinks tab-odd" onclick="openDiv(event, 'awards')">Awards</button>
+            </div>
 
+            <div id="tskills" class="tabcontent glow">
+                <i class="fab fa-react"></i>
+                <i class="fab fa-python"></i>
+                <i class="fab fa-js-square"></i>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-java"></i>
+                <i class="fab fa-css3-alt"></i>
+            </div>
+
+            <div id="traits" class="tabcontent glow " style ="display:none;">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="education" class="tabcontent glow" style ="display:none;">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            <div id="extracurricular" class="tabcontent glow" style ="display:none;">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="awards" class="tabcontent glow " style ="display:none;">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+        </div>
+        
+        <div id = "projects">
+            
+        </div>
+        
         <div id = "contact">
-            <br>
-            <div class = "container">
-                <div class = "row">
-                    <div class = "col" style = "background-color: #0C2333; color: white">
-                        Thank you for your time, please contact me through:
-                    </div>
-                    <div class = "col">
-                        <div class = "row" style = "background-color: #3376BC">
-                        Gmail: duc.nguyen@ryeson.ca
-                        or
-                        ducng31cs@gmail.com
-                        Phone: (416)-669-6980
-                        </div>
-                        <div class = "row" style = "background-color: #91BBE5">
-                        Other social media platforms:
-                        Linkedin:
-                        Magnet:
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            
         </div>
-
-
-
-        <script src = 'scripts/script.js'></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src = "./scripts/script.js"></script>
     </body>
 
 </html>

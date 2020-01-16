@@ -1,269 +1,140 @@
-
-body {
-    background-color: white;
-  }
-  .circular-menu {
-    position: fixed;
-    bottom: 1em;
-    right: 1em;
-  }
-  
-  .circular-menu .floating-btn {
-    display: block;
-    width: 3.5em;
-    height: 3.5em;
-    border-radius: 50%;
-    background-color: hsl(4, 98%, 60%);
-    box-shadow: 0 2px 5px 0 hsla(0, 0%, 0%, .26);  
-    color: hsl(0, 0%, 100%);
-    text-align: center;
-    line-height: 3.9;
-    cursor: pointer;
-    outline: 0;
-  }
-  
-  .circular-menu.active .floating-btn {
-    box-shadow: inset 0 0 3px hsla(0, 0%, 0%, .3);
-  }
-  
-  .circular-menu .floating-btn:active {
-    box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, .4);
-  }
-  
-  .circular-menu .floating-btn i {
-    font-size: 1.3em;
-    transition: transform .2s;  
-  }
-  
-  .circular-menu.active .floating-btn i {
-    transform: rotate(-45deg);
-  }
-  
-  .circular-menu:after {
-    display: block;
-    content: ' ';
-    width: 3.5em;
-    height: 3.5em;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -2;
-    background-color: hsl(4, 98%, 60%);
-    transition: all .3s ease;
-  }
-  
-  .circular-menu.active:after {
-    transform: scale3d(5.5, 5.5, 1);
-    transition-timing-function: cubic-bezier(.68, 1.55, .265, 1);
-  }
-  
-  .circular-menu .items-wrapper {
-    padding: 0;
-    margin: 0;
-  }
-  
-  .circular-menu .menu-item {
-    position: absolute;
-    top: .2em;
-    right: .2em;
-    z-index: -1;
-    display: block;
-    text-decoration: none;
-    color: hsl(0, 0%, 100%);
-    font-size: 1em;
-    width: 3em;
-    height: 3em;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 3;
-    background-color: hsla(0,0%,0%,.1);
-    transition: transform .3s ease, background .2s ease;
-  }
-  
-  .circular-menu .menu-item:hover {
-    background-color: hsla(0,0%,0%,.3);
-  }
-  
-  .circular-menu.active .menu-item {
-    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .circular-menu.active .menu-item:nth-child(1) {
-    transform: translate3d(1em,-7em,0);
-  }
-  
-  .circular-menu.active .menu-item:nth-child(2) {
-    transform: translate3d(-3.5em,-6.3em,0);
-  }
-  
-  .circular-menu.active .menu-item:nth-child(3) {
-    transform: translate3d(-6.5em,-3.2em,0);
-  }
-  
-  .circular-menu.active .menu-item:nth-child(4) {
-    transform: translate3d(-7em,1em,0);
-  }
-  
-  /**
-   * The other theme for this menu
-   */
-  
-  .circular-menu.circular-menu-left {
-    right: auto; 
-    left: 1em;
-  }
-  
-  .circular-menu.circular-menu-left .floating-btn {
-    background-color: hsl(217, 89%, 61%);
-  }
-  
-  .circular-menu.circular-menu-left:after {
-    background-color: hsl(217, 89%, 61%);
-  }
-  
-  .circular-menu.circular-menu-left.active .floating-btn i {
-    transform: rotate(90deg);
-  }
-  
-  .circular-menu.circular-menu-left.active .menu-item:nth-child(1) {
-    transform: translate3d(-1em,-7em,0);
-  }
-  
-  .circular-menu.circular-menu-left.active .menu-item:nth-child(2) {
-    transform: translate3d(3.5em,-6.3em,0);
-  }
-  
-  .circular-menu.circular-menu-left.active .menu-item:nth-child(3) {
-    transform: translate3d(6.5em,-3.2em,0);
-  }
-  
-  .circular-menu.circular-menu-left.active .menu-item:nth-child(4) {
-    transform: translate3d(7em,1em,0);
-  }
-
-
-/*Description*/
-
-
-/*Div*/
-
-
-
-#home{
-    display: block;
-    background-image: url('bg.png');
-    padding-bottom: 20%;
-    padding-left: 25px;
+html,body{
+  height: 100%;
 }
-#projects{
-    display: none;
+body{
+  font-family: 'Gayathri', sans-serif;
+  background-color:black;
+  color:white;
+  margin:0;
+  height: 100%;
+}
+#navbar{
+  background-color: orange;
+  color:black;
+  padding-top:10px;
+  padding-left:10px;
+  font-size: 30px;
+}
+
+#banner{
+  background-image: url("bg.png");
+  filter: blur(2.5px);
+  width:100%;
+  height: 300px; 
+  text-align: center;
+
+}
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  text-align: center;
+  top:20%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+}
+
+
+.blink{
+  animation: blink 1s infinite;
+}
+@keyframes blink{
+  0% {opacity: 1.0;}
+  50% {opacity: 0.0;}
+  100% {opacity: 1.0;}
+}
+
+
+
+.glow{
+  animation: glow 1s infinite;
+}
+
+@keyframes glow{
+  0%{
+    box-shadow: 0px 0px 10px  orange;
+  }
+  50%{
+    box-shadow: 0px 0px 10px #A86D00;
+  }
+  100%{
+    box-shadow: 0px 0px 10px orange;
+  }
 }
 #about{
-    display: none;
-}
-#contact{
-    display: none;
-}
-#education{
-    display: none;
-}
-
-#context{
-  width:40% ;
+  background-color:orange;
   color:white;
-  font-size: 60px;
-  padding-top:10%;
-  
+  padding-left:50px;
+  padding-right:50px;
+  padding-top:20px;
+  padding-bottom: 20px;
+
 }
 
-/*----------------Span------------------*/
-
-#span1{
-  
-  font-family: 'Abril Fatface', cursive;
-}
-#span2{
-  font-family: 'Lobster', cursive;
-}
-#span3,#span4{
-  font-family: 'Girassol', cursive;
+#typewriter, .blink{
+  display: inline;
 }
 
-#p1{ 
-  background-image: linear-gradient(to right top, #3620ff, #571fff, #6e1eff, #811dff, #921eff, #724bff, #5263ff, #3874ff, #0090ff, #00a8ff, #00bcff, #20cfff);
-  color:white;
-  padding:30px;
-  border: none;
-}
-#p2{
-  background-image: linear-gradient(to right top, #ffa35d, #ff8364, #f96475, #e64c8a, #c440a0, #a857c3, #796dde, #007fee, #00a1fb, #00bbe5, #00d0ba, #50de8b);
-  color:white;
-  padding:30px;
-  border: none;
-}
-#p3{
-  background-image: linear-gradient(to right top, #02fff7, #00f4df, #00e9c6, #00dead, #00d293, #00c295, #00b193, #00a18f, #008691, #006b8a, #004f7a, #013361);
-  color:white;
-  padding:30px;
-  border: none;
-}
-div.card {
-  width: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-  border-radius: 25px;
+* {box-sizing: border-box}
+
+/* Style the tab */
+.tab {
+  float: left;
+  background-color: black;
+  width: 30%;
+  height: 300px;
+
 }
 
-#c2,#c3{
-  display: none;
-}
-
-#c1,#c2,#c3{
-  padding: 20px;
-}
-/*
-ul {
-  list-style-type: none;
-  text-align: left;
-}
-*/
-
-.displayDiv{
-  float:right;
+/* Style the buttons that are used to open the tab content */
+.tab button {
   display: block;
-  width: 65%;
-  border-style: solid;
-  height:100%;
-  border-width: 2px;
-  border-radius: 25px;
-}
-.row{
-  float:left;
-  width:30%;
-}
-
-
-.collapsible {
-  background-color: #777;
   color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
+  padding: 22px 16px;
+  width: 90%;
   border: none;
-  text-align: left;
   outline: none;
-  font-size: 15px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  border-radius: 20px;
+}
+.tab-odd{
+  background-color: orange;
+}
+.tab-even{
+  background-color: black;
+}
+/* Change background color of buttons on hover */
+.tab-odd:hover , .tab-even:hover{
+  background-color: white;
+  color:black;
 }
 
-.active, .collapsible:hover {
-  background-color: #555;
+
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid orange;
+  width: 70%;
+  border-left: none;
+  height: 300px;
 }
 
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+.aboutcontent{
+  margin:20px;
 }
