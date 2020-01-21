@@ -7,141 +7,178 @@
         <meta charset = "UTF-8">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
         rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Source+Code+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <script src="https://kit.fontawesome.com/ab82d81c79.js" crossorigin="anonymous"></script>
     </head>
     <body>
 
-        <div id = "home">
-            <div id = "banner"></div>
-            <div class="bg-text">
-                <h1>Hi! I am Duc Nguyen</h1>
-                <p>2nd Year Computer Science Student <span class = "blink">_</span></p>
-            </div>          
-        </div>
-        <!--
-        <div id = "navbar">
-            <i class="fa fa-bars"></i>
-        </div>
-        -->
-        <div id = "about">
-            <div class = "title-cont">
-            <div class = "abt">/><p class = "abt title" id = "abt" ></p><span class = "abt blink ">_</span></div>
-            <p id = "abt-content">
-                As an enthusiastic computer science who always thrives
-                 for knowledge and experience, an internship that will 
-                 allow me to learn and understand the concept of my 
-                 career path, website development, enhance my
-                  problem-solving and other technical skills and to 
-                  utilize my experience and knowledge.  
-            </p>
+            <div id = "navbar">  
+                <a class="active" href="#" onclick = "changePage('home')">
+                    <i class="fa fa-home"></i>
+                    <div class = "sub-title">
+                        Hello
+                    </div>
+                </a> 
+                <a href="#"  onclick = "changePage('skills')">
+                    <i class="fas fa-tasks"></i>
+                    <div class = "sub-title">
+                        Hello
+                    </div>
+                </a> 
+                <a href="#"  onclick = "changePage('projects')">
+                    <i class="fas fa-flask"></i>
+                </a> 
+                <a href="#" onclick = "changePage('contact')">
+                    <i class="fa fa-envelope"></i>
+                </a>
+                <a href="#" onclick = "changePage('design')">
+                    <i class="fas fa-theater-masks"></i>
+                </a>
             </div>
-        </div>
-        <div class = "aboutcontent">
-            <div class="tab">
-                <button class="tablinks tab-odd" onclick="openDiv(event, 'tskills')">Technical Skills</button>
-                <button class="tablinks tab-even" onclick="openDiv(event, 'traits')">Personal traits</button>
-                <button class="tablinks tab-odd" onclick="openDiv(event, 'education')">Education</button>
-                <button class="tablinks tab-even" onclick="openDiv(event, 'extracurricular')">Extracurricular</button>
-                <button class="tablinks tab-odd" onclick="openDiv(event, 'awards')">Awards</button>
+            <div class = "home w3-animate-bottom " id = "home">
+                <div class="border-home">
+                    <div class="bg-text">
+                        <h1>Hi! I am Duc Nguyen</h1>
+                        <p>2nd Year Computer Science Student <span class = "blink">_</span></p>
+                    </div>
+                    <div><h2  style = "display:inline;">/></h2><h2 id = "abt"  style = "display:inline;"></h2><h2 class = "blink"  style = "display:inline;">_</h2></div>
+                    <p id = "abt-content">
+                            As an enthusiastic computer science who always thrives
+                            for knowledge and experience, an internship that will 
+                            allow me to learn and understand the concept of my 
+                            career path, website development, enhance my
+                            problem-solving and other technical skills and to 
+                            utilize my experience and knowledge.  
+                    </p>
+                </div>
             </div>
+            
 
-            <div id="tskills" class="tabcontent glow">
-                <div class = "leftside"><i class="fas fa-chevron-left"></i></div>
-                <div class = "rightside"><i class="fas fa-chevron-right"></i></div>
-                <div>
-                        <div class = "slides" style = "display:block;font-size:20px;">
-                            <h1>Languages:<span class = "blink">_</span></h1>
-                            <table width= "100%">
-                                <tr>
-                                    <th>HTML</th>
-                                    <th>CSS</th>
-                                    <th>JavaScript</th>
-                                    <th>Python</th>
-                                </tr>
-                                <tr>
-                                    <th>C</th>
-                                    <th>Java</th>
-                                    <th>C#</th>
-                                    <th>Perl</th>
-                                </tr>
-                                <tr>
-                                    <th>Ruby</th>
-                                    <th>PHP</th>
-                                    <th>jQuery</th>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class = "slides" style = "display:none;font-size:20px;">
-                            <h1>Frameworks:<span class = "blink">_</span></h1>
-                            <table width= "100%">
-                                <tr>
-                                    <th>Reactjs</th>
-                                    <th>Django</th>
-                                    <th>NodeJS</th>
-                                </tr>
-                                 <tr>
-                                    <th>Angular</th>
-                                    <th>ASP.Net</th>
-                                </tr>
-                            </table>
+            <div id = "skills" class = "w3-animate-bottom">
+                <div class = "cont">
+                    <h1>Technical skills</h1>
+                    <table id = "grid">
+                        <tr>
+                            <td>
+                                <button type="button" class="collapsible card"><h4><b>Languages</b></h4></button>
+                                <div class="content card" >
+                                    <div style = "float:left;">
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>Java Script</li>
+                                            <li>Python</li>
+                                            <li>Java</li>
+                                            <li>C</li>
+                                        </ul>
+                                    </div>
+                                    <div style = "float:left;">
+                                        <ul>
+                                            <li>Ruby</li>
+                                            <li>C#</li>
+                                            <li>Perl</li>
+                                            <li>PHP</li>
+                                            <li>jQuery</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        </td>
 
+                        
+                            <td>
+                                <button type="button" class="collapsible card"><h4><b>Framework</b></h4></button>
+                                <div class="content card">
+                                    <ul>
+                                        <li>Django</li>
+                                        <li>Reactjs</li>
+                                        <li>Nodejs</li>
+                                        <li>ASP.NET</li>
+                                        <li>Angular</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="collapsible card"><h4><b>Databases</b></h4></button>
+                                <div class="content card">
+                                    <ul>
+                                        <li>MongoDB</li>
+                                        <li>SQLite</li>
+                                        <li>SQL</li>
+                                        <li>MySQL</li>
+                                        <li>Microsoft SQL server management</li>
+                                    </ul>
+                                </div>
+                            </td>
+                       
+                            <td>
+                                <button type="button" class="collapsible card"><h4><b>Operating systems</b></h4></button>
+                                <div class="content card">
+                                    <ul>
+                                        <li>Windows</li>
+                                        <li>Linux</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class = "cont">
+                    <h1> Personal Traits</h1>
+                    <div>
+                        <div>
+                            <i class="fas fa-history"></i>
+                            Time management
                         </div>
-                        <div class = "slides" style = "display:none;font-size:20px;">
-                            <h1>Databases:<span class = "blink"></span></h1>
-                            <table width= "100%">
-                                <tr>
-                                    <th>SQL</th>
-                                    <th>MySQL</th>
-                                </tr>
-                                 <tr>
-                                    <th>SQLite</th>
-                                    <th>MongoDB</th>
-                                </tr>
-                            </table>
+                        
+                        <div>
+                            <i class="fas fa-user-graduate"></i>
+                            Fast learner
                         </div>
-                        <div class = "slides" style = "display:none;font-size:20px;">
-                            <h1>Operating systems:<span class = "blink"></span></h1>
-                            <table width= "100%">
-                                <tr>
-                                    <th>Windows</th>
-                                    <th>Linux</th>
-                                </tr>
-                            </table>
+                        <div>
+                            <i class="far fa-thumbs-up"></i>
+                            Flexible and Responsible
                         </div>
-                
+
+                        <div>
+                            <i class="fas fa-user-friends"></i>
+                           Team work
+                        </div>
+                        <div>
+                            <i class="far fa-check-square"></i>
+                            Problem solving
+                        </div>
+
+                    </div>                    
                 </div>
             </div>
 
-            <div id="traits" class="tabcontent glow " style ="display:none;">
+
+            <div id = "projects" class = "w3-animate-bottom">
+                <div class = "cont">
+                Hello
+                </div>
             </div>
 
-            <div id="education" class="tabcontent glow" style ="display:none;">
-                <h3>Tokyo</h3>
-                <p>Tokyo is the capital of Japan.</p>
+
+            <div id = "contact" class ="w3-animate-bottom">
+                <div class = "cont">
+                Hello
+                </div>
             </div>
 
-            <div id="extracurricular" class="tabcontent glow" style ="display:none;">
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
-            </div>
-
-            <div id="awards" class="tabcontent glow " style ="display:none;">
-                <h3>Tokyo</h3>
-                <p>Tokyo is the capital of Japan.</p>
-            </div>
-        </div>
-        
-        <div id = "projects">
             
-        </div>
-        
-        <div id = "contact">
-            
-        </div>
-        <div id = "test">
-        </div>
+            <div id = "design" class ="w3-animate-bottom">
+                <div class = "cont">
+                Hello
+                </div>
+            </div>
+
         <script src = "./scripts/script.js"></script>
     </body>
 

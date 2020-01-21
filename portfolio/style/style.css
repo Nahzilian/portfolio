@@ -2,48 +2,60 @@ html,body{
   height: 100%;
 }
 body{
-  font-family: 'Gayathri', sans-serif;
-  background: #474747;
+  font-family: 'Source Code Pro', monospace;
+  /*font-family: 'Lobster', cursive;
+  font-family: 'Roboto', sans-serif;*/
+  background: linear-gradient(309deg, #0098ff, #00ffbd, #0098ff, #ff0000, #ff00bd,#ff8c00);
+  background-size: 1000% 1000%;
+  animation: AnimationName 45s ease infinite;
   color:white;
   margin:0;
   height: 100%;
 }
+
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.home{
+  margin-top: 10%;
+  padding: 10px;
+  margin-left:360px;
+  margin-right: 200px;
+  float:right;
+
+}
+
 #navbar{
-  background-color: #00ffbb;
   color:white;
-  padding-top:10px;
-  padding-left:10px;
   font-size: 30px;
-}
-
-#banner{
-  background-image: url("bg.png");
-  filter: blur(2px);
-  width:100%;
-  height: 500px; 
-  text-align: center;
-
-}
-
-.bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  border: 3px solid #f1f1f1;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
   z-index: 2;
-  width: 80%;
-  text-align: center;
-  top:25%;
+  
 }
 
-.row:after {
-  content: "";
-  display: table;
+.bg-text{
+  text-align: center;
 }
+
+#navbar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
 
 
 .blink{
@@ -55,154 +67,98 @@ body{
   100% {opacity: 1.0;}
 }
 
-
-
-.glow{
-  animation: glow 1s infinite;
-}
-
-@keyframes glow{
-  0%{
-    box-shadow: 0px 0px 10px  greenyellow;
-  }
-  50%{
-    box-shadow: 0px 0px 20px green;
-  }
-  100%{
-    box-shadow: 0px 0px 10px greenyellow;
-  }
-}
-#about{
-  background-color:#00ffbb;
-  color:white;
-  padding-left:50px;
-  padding-right:50px;
-  padding-top:20px;
-  padding-bottom: 20px;
-
-}
-
 #typewriter, .blink{
   display: inline;
 }
 
-* {box-sizing: border-box}
-
-/* Style the tab */
-.tab {
-  float: left;
-  width: 30%;
-  height: 300px;
-
-}
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  display: block;
-  
-  padding: 22px 16px;
-  width: 90%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-  text-align: center;
-  border-radius: 20px;
-  border: 1px solid #00ffbb;
-}
-.tab-odd{
-  background-color: #00ffbb;
-  color: #474747;
-  font-weight: bold;
-}
-.tab-even{
-  background-color: #474747;
-  border: 1px solid #00ffbb;
-  color:#00ffbb;
-  font-weight: bold;
-}
-/* Change background color of buttons on hover */
-.tab-odd:hover , .tab-even:hover{
-  background-color: white;
-  color:#474747;
-  
-}
-
-
 
 /* Style the tab content */
 .tabcontent {
-  float: left;
-  padding: 0px 12px;
-  border: 1px solid #00ffbb;
-  width: 70%;
-  border-left: none;
   height: 300px;
   font-size: 50px;
-  background-color: black;
-  color:greenyellow;
-  font-family: 'Press Start 2P', cursive;
+  background-color: white;
+  color:#474747;
 }
 
 .aboutcontent{
   margin:20px;
 }
 
-.leftside, .rightside{
-  padding-top:9%;
-}
-
-.leftside{
-  float:left;
-}
-
-.rightside{
-  float:right;
-}
-
-.trans-spacing{
-  width:100%;
-  height:200px;
-}
-
-.abt{
-  font-size: 50px;
-  padding:10px;
-}
-
-.title{
-  display: inline;
-}
-.title-cont{
-  
-  font-weight: bold;
-  background-color: #474747;
-  color: white;
-}
-
 #abt-content{
-  color:#474747;
-   background-color:#00ffbb;
-    border:2px solid #474747;
-    padding:20px;
+  color:white;
 }
 
-.slides{
-  animation: slide 2s infinite;
+.border-home{
+  border:5px solid white;
+  padding: 20px;
 }
 
-@keyframe slides{
-  0%{
-  left:100%;
-  }
-  50%{
-    left:50%;
-  }
-  100%{
-    left:0;
-  }
-}
-#project{
+.sub-title{
+  position: fixed;
+  z-index: 1;
+  display: none;
   
+}
+
+.sub-title:nth-child(0) a:hover{
+  display: inline;
+  
+}
+
+.cont{
+  margin-top: 10%;
+  margin-left:360px;
+  margin-right: 160px;
+}
+
+#home{
+  display: block;
+}
+
+#skills,#projects,#contact,#design{
+  display: none;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  background-color: white;
+  color:red;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.collapsible {
+  cursor: pointer;
+  padding: 18px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+#grid{
+  width: 100%;
+  padding:0px;
 }

@@ -1,22 +1,18 @@
-function openDiv(evt, nameDiv) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
 
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
 
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-  // Show the current tab, and add an "active" class to the link that opened the tab
-  document.getElementById(nameDiv).style.display = "block";
-  evt.currentTarget.className += " active";
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
 }
 
 
@@ -26,7 +22,7 @@ function typeWriter() {
   if (i < txt.length) {
       document.getElementById("abt").innerHTML += txt.charAt(i);
       i++;
-      setTimeout(typeWriter, 100);
+      setTimeout(typeWriter, 150);
     }
   else{
     i = 0;
@@ -52,4 +48,12 @@ function slideshow(){
 }
 
 
-setInterval(slideshow,3000);
+function changePage(id){
+  var arr = ['home','skills','projects','contact','design'];
+  for(var i = 0; i < arr.length;i++){
+    if(arr[i]!==id) document.getElementById(arr[i]).style.display = "none";
+  }
+  document.getElementById(id).style.display = "block";
+  
+
+}
