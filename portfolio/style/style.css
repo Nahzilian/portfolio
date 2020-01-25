@@ -162,3 +162,116 @@ body{
   width: 100%;
   padding:0px;
 }
+
+.l-points{
+  background-color:white;
+  color:red;
+  padding:20px;
+  margin:20px;
+  width:200px;
+  
+}
+
+.container-card{
+  padding:20px;
+  margin:20px;
+}
+.card-title{
+  position:fixed;
+  padding-top:300px;
+  padding-left:40px;
+  color:black;
+}
+.card-p{
+  background-color:orange;
+  margin-top:80px;
+  width:300px;
+  height:500px;
+  color:white;
+  
+}
+
+#back{
+  display:none;
+}
+
+
+.card-p:hover #front{
+  display:none;
+}
+.card-p:hover #back{
+  animation: fadein 0.5s;
+  display:block;
+}
+
+.button-git{
+  position:fixed;
+  padding-top:340px;
+  padding-left:90px;
+}
+
+
+@keyframes fadeout {
+  0% {opacity:1}
+  50% {opacity:0.5}
+  100% {opacity:0}
+}
+@keyframes fadein {
+  0% {opacity:0}
+  50% {opacity:0.5}
+  100% {opacity:1}
+}
+
+.triangle-left{
+  border-bottom:412px solid white;
+  border-right:300px solid transparent;
+  padding-top:89px;
+}
+
+
+
+.button{
+  cursor:pointer;
+  color:white;
+  background-color:green;
+  padding:20px;
+  border-radius:20px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
