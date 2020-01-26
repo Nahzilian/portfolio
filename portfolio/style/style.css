@@ -176,32 +176,18 @@ body{
   padding:20px;
   margin:20px;
 }
-.card-title{
-  position:fixed;
-  padding-top:300px;
-  padding-left:40px;
-  color:black;
-}
+
 .card-p{
-  background-color:orange;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
   margin-top:80px;
   width:300px;
   height:500px;
   color:white;
-  
+  text-align: center;
 }
 
-#back{
-  display:none;
-}
-
-
-.card-p:hover #front{
-  display:none;
-}
-.card-p:hover #back{
-  animation: fadein 0.5s;
-  display:block;
+.card-p h4{
+  padding-top:20px;
 }
 
 .button-git{
@@ -211,24 +197,11 @@ body{
 }
 
 
-@keyframes fadeout {
-  0% {opacity:1}
-  50% {opacity:0.5}
-  100% {opacity:0}
-}
-@keyframes fadein {
-  0% {opacity:0}
-  50% {opacity:0.5}
-  100% {opacity:1}
-}
-
 .triangle-left{
-  border-bottom:412px solid white;
+  border-bottom:352px solid white;
   border-right:300px solid transparent;
   padding-top:89px;
 }
-
-
 
 .button{
   cursor:pointer;
