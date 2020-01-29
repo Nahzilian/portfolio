@@ -14,10 +14,7 @@
         <script src="https://kit.fontawesome.com/ab82d81c79.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <!--
-            <i class="fab fa-github"></i>
-          
-        -->
+
 
 
             <div id = "navbar">  
@@ -39,9 +36,6 @@
                 <a href="#" onclick = "changePage('contact')">
                     <i class="fa fa-envelope"></i>
                 </a>
-                <a href="#" onclick = "changePage('design')">
-                    <i class="fas fa-theater-masks"></i>
-                </a>
             </div>
             <div class = "home w3-animate-bottom " id = "home">
                 <div class="border-home">
@@ -58,13 +52,26 @@
                             problem-solving and other technical skills and to 
                             utilize my experience and knowledge.  
                     </p>
+                    
                 </div>
+                <br>
             </div>
             
 
             <div id = "skills" class = "w3-animate-bottom">
+                
+                <div class="cont">
+                    <h1>Education<span class = "blink">_</span></h1>
+                    <div>
+                        <img src="pictures/logo.jpg" style = "float:left">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.5438230600403!2d-79.38099038450216!3d43.65765847912112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb35431c1395%3A0xe8ed8bd69125d6f4!2sRyerson%20University!5e0!3m2!1sen!2sca!4v1580333148540!5m2!1sen!2sca" 
+                        width="70%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+                
                 <div class = "cont">
-                    <h1>Technical skills</h1>
+                    
+                    <h1>Technical skills<span class = "blink">_</span></h1>
                     <table id = "grid">
                         <tr>
                             <td>
@@ -134,7 +141,7 @@
                 </div>
 
                 <div class = "cont">
-                    <h1>Personal traits</h1>
+                    <h1>Personal traits<span class = "blink">_</span></h1>
                     <table style = "width:100%">
                         <tr>
                             <td class = "l-points">
@@ -169,7 +176,7 @@
 
             <div id = "projects" class = "w3-animate-bottom">
                 <div class = "cont">
-                    <h1>Projects</h1>
+                    <h1>Projects<span class = "blink">_</span></h1>
                     <table style = "width:100%">
                         <tr>
                             <td>
@@ -177,7 +184,7 @@
                                 <div class = "container-card" id="myBtn1">
                                    
                                     <div class = "card-p">
-                                     <h4>Vbiz</h4>
+                                     <h4>Vbiz<span class = "blink">_</span></h4>
                                         <div id = "front">
                                             <div class = "triangle-left">
                                             </div>
@@ -189,7 +196,7 @@
                                         <div class="modal-content">
                                             <span class="close"></span>
                                             <div class = "project-info">
-                                                <h1>Vbiz</h1>
+                                                <div class = "modal-title"><h1>Vbiz</h1></div>
 
                                                 <h3>Description</h3>
                                                 <p>Vietnamese services in Canada (December 2019 - In progress)</p>
@@ -198,13 +205,16 @@
                                                     <li>Individual project to learn about Django and Reactjs.</li>
                                                 </ul>
                                                 <h3>Frameworks:</h3>
-                                                <div>
-                                                    <div class = "sl">
-                                                    
-                                                    </div>
-                                                    <div class = "sr">
-                                                    </div>
-                                                </div>
+                                                    <table width ="100%">
+                                                        <tr>
+                                                            <td>
+                                                                <img src = "pictures/logo-og.png" width="100%">
+                                                            </td>
+                                                            <td>
+                                                                <img src = "pictures/django-logo-negative.png" width="100%">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
                                                 <h3>Problems that I encountered:</h3>
                                                 <ul>
                                                     <li>Bad request when sending request to backend.</li>
@@ -224,6 +234,7 @@
                                                     For the other problems, they were not as challenging as setting up authentication for the web, but they
                                                     definitely brought me more experience on how Reactjs work. 
                                                 </p>
+                                                <a href = "http://nahzilian.pythonanywhere.com/" style ="text-decoration:none"><div class = "btn">Visit website</div></a>
                                             </div>
                                         </div>
 
@@ -234,7 +245,7 @@
                                 <div class = "container-card" id="myBtn2">
                                         
                                         <div class = "card-p">
-                                            <h4>Photo sharing webapp</h4>
+                                            <h4>Photo sharing webapp<span class = "blink">_</span></h4>
                                             <div id = "front">
                                                 <div class = "triangle-left">
                                                    
@@ -245,7 +256,58 @@
                                         <div id="myModal2" class="modal">
                                             <div class="modal-content">
                                                 <span class="close"></span>
-                                                <p>2</p>
+                                                <div class = "project-info">
+                                                <div class = "modal-title"><h1>Photo sharing webapp</h1></div>
+
+                                                <h3>Description</h3>
+                                                <p>Online photo sharing website (November 2019 - In progress)</p>
+                                                <ul>
+                                                    <li>Team project for the final web development course.</li>
+                                                    <li>Role: Design Backend and Frontend of the main page.</li>
+                                                    <li>Web Page application with React JS, Django framework and Bootstrap styling.</li>
+                                                </ul>
+                                                <h3>Frameworks:</h3>
+                                                    <table width ="100%">
+                                                        <tr>
+                                                            <td>
+                                                                <img src = "pictures/logo-og.png" width="100%">
+                                                            </td>
+                                                            <td>
+                                                                <img src = "pictures/django-logo-negative.png" width="100%">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                <h3>Problems that we encountered:</h3>
+                                                <ul>
+                                                    <li>API not responding</li>
+                                                    <li>Theme and styling of the website</li>
+                                                </ul>
+                                                <h3>Problems that I encountered:</h3>
+                                                <ul>
+                                                    <li>Timing and scheduling</li>
+                                                    <li>Responsive design</li>
+                                                </ul>
+                                                <h3>How I overcame the issues:</h3>
+                                                <p>
+                                                    We were trying to build the API to send data from frontend to backend. However, non of us were experienced in both Reactjs and Django,
+                                                    and it took us a long time to get the problem solve. We tried different ways in order to resolve the problem and it was the way we map data that caused such trouble.
+                                                    
+                                                </p>
+                                                <p>
+                                                    We could not came up with the theme and it also took us a long time to make a decision. Afterward, we decided that I will decide on the theme and
+                                                    we eventually came to an agreement on the theme and design. 
+                                                </p>
+                                                <p>
+                                                   For the problem that I encountered,at first, my design did not meet the expectation of the team, and eventually I came up with a new approach.
+                                                   I tried to narrow down what I want, what the website need, and make a rough work on the design. The process saved us a lot of time and we all 
+                                                   sastisfied with the final product.
+                                                </p>
+                                                <a href = "https://scs.ryerson.ca/~akhrulev/index.html" style ="text-decoration:none"><div class = "btn">Visit website</div></a>
+                                            </div>
+
+
+
+
                                             </div>
 
                                         </div>
@@ -255,7 +317,7 @@
                             <div class = "container-card" id="myBtn3">
                                     
                                     <div class = "card-p">
-                                    <h4>Vibe</h4>
+                                    <h4>Vibe<span class = "blink">_</span></h4>
                                         <div id = "front">
                                             <div class = "triangle-left">
                                                
@@ -266,7 +328,35 @@
                                     <div id="myModal3" class="modal">
                                         <div class="modal-content">
                                             <span class="close"></span>
-                                            <p>3</p>
+                                            <div class = "project-info">
+                                                <div class = "modal-title"><h1>Vibe</h1></div>
+
+                                                <h3>Description</h3>
+                                                <p>Side projects to help me understand more about React JS, Django, APIs and MongoDB.</p>
+                                                <ul>
+                                                    <li>Application to help people improve their mood through facial detection and songs</li>
+                                                </ul>
+                                                <h3>Frameworks:</h3>
+                                                    <table width ="100%">
+                                                        <tr>
+                                                            <td>
+                                                                <img src = "pictures/logo-og.png" width="100%">
+                                                            </td>
+                                                            <td>
+                                                                <img src = "pictures/django-logo-negative.png" width="100%">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                <h3>Intention:</h3>
+                                                
+                                                <p>
+                                                    The project is still in the planning phase, however, I do update info once or twice on readme on Github. 
+                                                </p>
+                                                <a href = "https://github.com/Nahzilian/vibe" style ="text-decoration:none"><div class = "btn">Visit Repository</div></a>
+                                            </div>
+
+
+
                                         </div>
 
                                     </div>
@@ -286,19 +376,19 @@
                     </div>
                     <div class = "middle-detail">
                         <br>
-                        <h2>Toronto, Canada</h2></div>
+                        <h2>Toronto, Canada<span class = "blink">_</span></h2></div>
                         <div class = "profile-detail">
                             <h2>Contact</h2>
                             <table width ="100%">
                             <tr>
                                 <td>
-                                <p>Icon : email</p>
-                                <p><i class="fab fa-github"></i> github</p>
-                                <p>Icon : codepen?</p>
+                                <a href ="mailto:ducng31cs@gmail.com" style = "text-decoration:none;"><p style="font-size:20px"><i class="far fa-envelope" style="font-size:30px"></i> Email</p></a>
+                                <a href ="https://github.com/Nahzilian" style = "text-decoration:none;"><p style="font-size:20px"><i class="fab fa-github" style="font-size:30px"></i> Github</p></a>
+                                <a href ="https://codepen.io/nahzilian" style = "text-decoration:none;"><p style="font-size:20px"><i class="fab fa-codepen" style="font-size:30px"></i> Codepen</p></a>
                                 </td>
                                 <td>
-                                <p>Icon : linkedin</p>
-                                <p>Icon : hackerank</p>
+                                <a href ="https://www.linkedin.com/in/duc-nguyen-552b06192/" style = "text-decoration:none;"><p style="font-size:20px"><i class="fab fa-linkedin" style="font-size:30px"></i> Linkedin</p></a>
+                                <a href ="https://www.hackerrank.com/nguyenhongduc31" style = "text-decoration:none;"><p style="font-size:20px"><i class="fab fa-hackerrank" style="font-size:30px"></i> Hackerank</p></a>
                                 </td>
                             </tr>
                             </table>
@@ -310,12 +400,6 @@
 
             </div>
 
-            
-            <div id = "design" class ="w3-animate-bottom">
-                <div class = "cont">
-                Hello
-                </div>
-            </div>
 
         <script src = "./scripts/script.js"></script>
     </body>

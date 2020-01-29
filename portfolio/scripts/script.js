@@ -49,7 +49,7 @@ function slideshow(){
 
 
 function changePage(id){
-  var arr = ['home','skills','projects','contact','design'];
+  var arr = ['home','skills','projects','contact'];
   for(var i = 0; i < arr.length;i++){
     if(arr[i]!==id) document.getElementById(arr[i]).style.display = "none";
   }
