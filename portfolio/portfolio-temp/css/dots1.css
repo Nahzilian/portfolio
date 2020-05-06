@@ -1,0 +1,18 @@
+ul li {
+    border-bottom: 2px dotted #ccc;
+}
+
+span.defined {
+    float: right;
+}
+
+span.defined:before {
+    content: "$";
+}
+
+
+
+span.dotted {
+	border-bottom: 2px dotted #ccc;
+    margin-bottom:2px;
+}

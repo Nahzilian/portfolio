@@ -1,0 +1,193 @@
+/*
+Theme Name: Divi child theme
+Template: Divi
+*/
+@import url('../Divi/style.css');
+/* YOUR CSS EDITS GO BELOW THIS LINE AND AND CSS RULES YOU MAKE HERE WILL OVERIDE THE MASTER DIVI THEME CSS RULES */
+
+.ngg-gallery-thumbnail img {
+    background-color: #fff;
+    border: 1px solid #ffffff !important;
+    display: block;
+    margin: 4px 0 4px 4px;
+    padding: 4px;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6{
+margin-bottom:20px;
+}
+.et_pb_slider h2{
+text-shadow: 0px 0px 11px rgba(255, 255, 255, 1) !important;
+}
+.mincho h2{
+font-family : YuMincho, '游明朝', "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", serif !important;
+}
+/*.et_fixed_nav #logo {
+max-height: 88px;
+margin-bottom: 0;
+}*/
+.menu-item-language a{
+font-weight: bold;
+font-size: 120% !important;
+color: #ff8989 !important;
+}
+#et-top-navigation{
+font-weight:normal !important;
+}
+.et-fixed-header #logo {
+max-height: 30px !important;
+}
+#top_banner.et_pb_section{
+padding:10px 0px !important;
+}
+.et_pb_testimonial_portrait {
+width: 100px;
+height: 100px;
+}
+.et_pb_blog_grid .et_pb_post {
+border: 1px solid #eeeeee;
+}
+.et_pb_blog_grid .et_pb_post {
+margin: 0 40px 40px 0;
+}
+.et_pb_slide_description h2{
+color: #ffffff !important;
+text-shadow: 2px 2px 2px rgba(0, 5, 11, 0.5);
+}
+.et_pb_fullwidth_header{
+padding:8% 0;
+}
+/*.et_pb_fullwidth_header h1{
+font-size:300%;
+}*/
+#gallery-1 img,
+#gallery-2 img,
+#gallery-3 img,
+#gallery-4 img,
+#gallery-5 img,
+#gallery-6 img,
+#gallery-7 img {
+border: 0px !important;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+}
+#gallery-1 .gallery-item {
+width: 20% !important;
+}
+th, td{
+border:1px solid #eee;
+}
+#service h3{
+margin-bottom:5px;
+color:#cccccc;
+}
+#service table{
+}
+#info th,
+#service th{
+background-color:#f9f9f9;
+width:50%;
+}
+#pages-2 li{
+margin-bottom:10px;
+border:1px solid #eee;
+display:block;
+background-color:#f9f9f9;
+}
+#pages-2 li a{
+padding:10px 10px 10px 20px;
+display:block;
+}
+#about h2,
+#course h2,
+#special h2,
+#service h2,
+#contact h1,
+#blog h1,
+#gallery h1,
+#shop h1{
+background-image: url(../../uploads/bbg.jpg);
+background-repeat: none;
+background-position: center left -80px;
+padding: 15px;
+color: #7B615B;
+font-weight: bold;
+font-size: 20px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+#course h3{
+font-size: 16px;
+border:1px solid #ddd;
+background: #ffffff; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWU1ZTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-8 */
+font-weight: bold;
+color: #222;
+padding: 10px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+#course h4{
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: bold;
+}
+#course p strong{
+	color: #ff8989;
+}
+.et_pb_tabs_controls li.et_pb_tab_active {
+padding: 4px 30px 4px;
+background-color: #000;
+color: #fff;
+bottom: -1px;
+}
+.et_pb_tab_active a {
+color: #fff!important;
+}
+.et_pb_toggle_title{
+	font-weight: bold;
+}
+#top-header .container {
+  font-weight: normal !important;
+}
+/* Divi image gallery widths */
+.et_pb_gallery_grid .et_pb_gallery_item,
+.et_pb_gallery_grid .column_width,
+.et_pb_gallery_grid .et_pb_gallery_image,
+.et_pb_gallery_grid .et_pb_gallery_image.portrait img
+{
+width: 220px;
+}
+.et_pb_gallery_grid .et_pb_gallery_image img
+{
+min-width: 220px;
+}
+/* Set the image heights */
+.et_pb_gallery_grid .et_pb_gallery_image,
+.et_pb_gallery_grid .et_pb_gallery_image.landscape img
+{
+height: 220px;
+}
+.et_pb_gallery_grid .et_pb_gallery_image img
+{
+min-height: 220px;
+}
+/* Set the spacing between images */
+.et_pb_gallery_grid .gutter_width { width: 15px; }
+/*@media screen and (max-width:980px){
+	.displaynone{display: none;}
+}*/
+@media only screen and (min-width: 981px){
+#home_slider.et_pb_section {padding: 0 !important;}
+}
