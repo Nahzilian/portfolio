@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 
 html{
@@ -29,11 +30,20 @@ body::-webkit-scrollbar {
 :focus{outline: none;}
 
 #introduction{
+    animation: fadeIn 1.5s ease forwards;
+}
+.content-blocks{
+    position: relative;
+    margin-bottom:100px;
+}
+
+#main-content-wrapper{
     position: absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    animation: fadeIn 1.5s ease forwards;
+    display: flex;
+    flex-direction: column;
 }
 
 #logo{
@@ -41,34 +51,34 @@ body::-webkit-scrollbar {
 }
 
 #logo path:nth-child(1){
-    stroke-dasharray: 571.577148437;
-    stroke-dashoffset: 571.577148437;
+    stroke-dasharray: 571.5771484375;
+    stroke-dashoffset: 571.5771484375;
     animation: line-animation 1.5s ease forwards;
 }
 #logo path:nth-child(2){
-    stroke-dasharray: 463.9679870605469;
-    stroke-dashoffset: 463.9679870605469;
+    stroke-dasharray: 463.9659423828125;
+    stroke-dashoffset: 463.9659423828125;
     animation: line-animation 1.5s ease forwards 0.3s;
 }
 #logo path:nth-child(3){
-    stroke-dasharray: 493.9131164550781;
-    stroke-dashoffset: 493.9131164550781;
+    stroke-dasharray: 493.91314697265625;
+    stroke-dashoffset: 493.91314697265625;
     animation: line-animation 1.5s ease forwards 0.6s;
 }
 #logo path:nth-child(4){
-    stroke-dasharray: 226.94400024414062;
-    stroke-dashoffset: 226.94400024414062;
-    animation: line-animation 1.5s ease forwards 0.9;
+    stroke-dasharray: 226.9440155029297;
+    stroke-dashoffset: 226.9440155029297;
+    animation: line-animation 1.5s ease forwards 0.3;
 }
 #logo path:nth-child(5){
-    stroke-dasharray: 635.713134765625;
-    stroke-dashoffset: 635.713134765625;
+    stroke-dasharray: 635.7130126953125;
+    stroke-dashoffset: 635.7130126953125;
     animation: line-animation 1.5s ease forwards 1.2s;
 }
 #logo path:nth-child(6){
     stroke-dasharray: 604.4830322265625;
     stroke-dashoffset: 604.4830322265625;
-    animation: line-animation 1.5s ease forwards 1.5s;
+    animation: line-animation 1.5s ease forwards 0.9s;
 }
 #logo path:nth-child(7){
     stroke-dasharray: 463.96795654296875;
@@ -78,7 +88,13 @@ body::-webkit-scrollbar {
 #logo path:nth-child(8){
     stroke-dasharray: 549.067138671875;
     stroke-dashoffset: 549.067138671875;
-    animation: line-animation 1.5s ease forwards 1.8s;
+    animation: line-animation 1.5s ease forwards 1.2s;
+}
+
+#logo path:nth-child(9){
+    stroke-dasharray: 625.3908081054688;
+    stroke-dashoffset: 625.3908081054688;
+    animation: line-animation 1.5s ease forwards 0.3s;
 }
 
 .underline{
@@ -133,13 +149,213 @@ body::-webkit-scrollbar {
     z-index: 101;
     width: 2px;
     margin:60px;
-    height: 100%;
+    height: 90vh;
     background: rgba(255, 255, 255, 0.14);
 }
 
 .indicator{
     background-image: url('./assets/icons/mouse-icon.png');
 }
+
+.scroll-typography{
+    position: fixed;
+    transform: rotate(90deg);   
+}
+
+.glitch-effect {
+    text-align: center;
+    color: #fff;
+    font-size: 5em;
+    letter-spacing: 8px;
+    font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    animation: glitch1 2.5s infinite;
+  }
+  
+  .glitch-effect:nth-child(2) {
+    color: #67f3da;
+    animation: glitch2 2.5s infinite;
+  }
+  
+  .glitch-effect:nth-child(3) {
+    color: #f16f6f;
+    animation: glitch3 2.5s infinite;
+  }
+  
+  @keyframes glitch1 {
+    0% {
+      transform: none;
+      opacity: 1;
+    }
+    7% {
+      transform: skew(-0.5deg, -0.9deg);
+      opacity: 0.75;
+    }
+    10% {
+      transform: none;
+      opacity: 1;
+    }
+    27% {
+      transform: none;
+      opacity: 1;
+    }
+    30% {
+      transform: skew(0.8deg, -0.1deg);
+      opacity: 0.75;
+    }
+    35% {
+      transform: none;
+      opacity: 1;
+    }
+    52% {
+      transform: none;
+      opacity: 1;
+    }
+    55% {
+      transform: skew(-1deg, 0.2deg);
+      opacity: 0.75;
+    }
+    50% {
+      transform: none;
+      opacity: 1;
+    }
+    72% {
+      transform: none;
+      opacity: 1;
+    }
+    75% {
+      transform: skew(0.4deg, 1deg);
+      opacity: 0.75;
+    }
+    80% {
+      transform: none;
+      opacity: 1;
+    }
+    100% {
+      transform: none;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes glitch2 {
+    0% {
+      transform: none;
+      opacity: 0.25;
+    }
+    7% {
+      transform: translate(-2px, -3px);
+      opacity: 0.5;
+    }
+    10% {
+      transform: none;
+      opacity: 0.25;
+    }
+    27% {
+      transform: none;
+      opacity: 0.25;
+    }
+    30% {
+      transform: translate(-5px, -2px);
+      opacity: 0.5;
+    }
+    35% {
+      transform: none;
+      opacity: 0.25;
+    }
+    52% {
+      transform: none;
+      opacity: 0.25;
+    }
+    55% {
+      transform: translate(-5px, -1px);
+      opacity: 0.5;
+    }
+    50% {
+      transform: none;
+      opacity: 0.25;
+    }
+    72% {
+      transform: none;
+      opacity: 0.25;
+    }
+    75% {
+      transform: translate(-2px, -6px);
+      opacity: 0.5;
+    }
+    80% {
+      transform: none;
+      opacity: 0.25;
+    }
+    100% {
+      transform: none;
+      opacity: 0.25;
+    }
+  }
+  
+  @keyframes glitch3 {
+    0% {
+      transform: none;
+      opacity: 0.25;
+    }
+    7% {
+      transform: translate(2px, 3px);
+      opacity: 0.5;
+    }
+    10% {
+      transform: none;
+      opacity: 0.25;
+    }
+    27% {
+      transform: none;
+      opacity: 0.25;
+    }
+    30% {
+      transform: translate(5px, 2px);
+      opacity: 0.5;
+    }
+    35% {
+      transform: none;
+      opacity: 0.25;
+    }
+    52% {
+      transform: none;
+      opacity: 0.25;
+    }
+    55% {
+      transform: translate(5px, 1px);
+      opacity: 0.5;
+    }
+    50% {
+      transform: none;
+      opacity: 0.25;
+    }
+    72% {
+      transform: none;
+      opacity: 0.25;
+    }
+    75% {
+      transform: translate(2px, 6px);
+      opacity: 0.5;
+    }
+    80% {
+      transform: none;
+      opacity: 0.25;
+    }
+    100% {
+      transform: none;
+      opacity: 0.25;
+    }
+  }
+
+.svg-display{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.svg-blocks{
+    justify-content: center;
+}
+
 /* 
 .glass {
     background: inherit;
