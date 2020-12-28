@@ -1,10 +1,20 @@
 import React, { useState } from 'react';
 import { ReactComponent as Working1 } from '../assets/svg/working_1.svg'
-import Card from './Card'
+import Card from './Card';
+import Modal from './Modal';
+
 export default function Landing() {
     const temp = [{'id':1, 'content':'temp'},{'id':2, 'content':'temp'},{'id':3, 'content':'temp'}]
 
     const [progressPercentage, setProgressPercentage] = useState(null);
+    const [displayMode, setDisplayMode] = useState('none')
+    const style = {
+        display:displayMode
+    }
+
+    const handleClickCard = (card) => {
+
+    }
     const progressMainStyle = {
         position: 'absolute',
         width: "15px",
@@ -25,8 +35,8 @@ export default function Landing() {
 
     return (
         <div className="main">
+            <Modal/>
             <div id="top" />
-            {/* <div className = "card glass"> Hello </div> */}
             <div id="navbar-wrapper">
                 <div>
                     <a href="#top">Home</a> |
@@ -75,8 +85,8 @@ export default function Landing() {
                             </div>
                             <div className="exp-col">
                                 <div className="cards-experience">
-                                    <Card title = {"test"} content = {temp} type = {"short-display"}/>
-                                    <Card title = {"test"} content = {temp} type = {"short-display"}/>
+                                    <Card title = {"Plan de Vol International"} content = {temp} type = {"short-display"}/>
+                                    <Card title = {"HD Telecom Inc."} content = {temp} type = {"short-display"}/>
                                 </div>
                             </div>
                         </div>

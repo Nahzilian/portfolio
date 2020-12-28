@@ -8,9 +8,12 @@ export default function Card(props) {
         reset: true,
         easing: "cubic-bezier(.03,.98,.52,.99)",
     }
+    const openModal = () => {
+
+    }
     if (props.type === "short-display") {
         return (
-            <Tilt className="card-short" options={tiltStyling}>
+            <Tilt className="card-short" options={tiltStyling} onClick = {openModal}>
                 <div className="card-title">
                     <div className="overlay">
                         <div className="text">{props.title}</div>
