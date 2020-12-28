@@ -32,16 +32,20 @@ body::-webkit-scrollbar {
 #introduction{
     animation: fadeIn 1.5s ease forwards;
 }
-.content-blocks{
+#introduction-wrapper, #experience-wrapper{
+    width: 100vw;
+    height: 100vh;
     position: relative;
-    margin-bottom:100px;
 }
 
-#main-content-wrapper{
+#introduction, #experience{
     position: absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+}
+
+.main-content{
     display: flex;
     flex-direction: column;
 }
@@ -356,7 +360,6 @@ body::-webkit-scrollbar {
     justify-content: center;
 }
 
-/* 
 .glass {
     background: inherit;
     position: absolute;
@@ -375,4 +378,54 @@ body::-webkit-scrollbar {
     bottom: 0;
     box-shadow: inset 0 0 0 200px rgba(255,255,255,0.3);
     filter: blur(10px);
-} */
+}
+#navbar-wrapper{
+    position: fixed;
+    top:0;
+    right:0;
+    z-index: 101;
+    float: right;
+    margin:20px;
+    color:white;
+}
+
+#navbar-wrapper a{
+    text-decoration: none;
+    color:white;
+}
+
+.exp-content{
+   display: flex;
+   flex-direction: row;
+   justify-content:space-around;
+}
+.cards-experience{
+    display: flex;
+    flex-direction: column;
+    
+}
+.exp-col{
+    width: 100%;
+}
+.card-short{
+    width: 25vw;
+    height: 15vh;
+    border-radius: 10px;
+    background-color: white;
+    color:red;
+    margin:40px;
+    padding:20px;
+   
+}
+.card-short:nth-child(1){
+    background-image: url('./assets/pictures/plane-wing.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card-short:nth-child(2){
+    background-image: url('./assets/pictures/code.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
