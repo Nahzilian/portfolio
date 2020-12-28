@@ -12,14 +12,18 @@ export default function Card(props) {
         return (
             <Tilt className="card-short" options={tiltStyling}>
                 <div className="card-title">
-                    {props.title}
+                    <div className="overlay">
+                        <div className="text">{props.title}</div>
+                    </div>
                 </div>
             </Tilt>
         )
     }
     return (
         <div className="card-title">
-            {props.title}
+            <div className="overlay">
+                <div className="text">Hello World</div>
+            </div>
         </div>
     )
 
