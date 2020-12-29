@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import { ReactComponent as Working1 } from '../assets/svg/working_1.svg'
 import Card from './Card';
 import Modal from './Modal';
 
 export default function Landing() {
     const [progressPercentage, setProgressPercentage] = useState(null);
-    const [displayMode, setDisplayMode] = useState('none')
+    const [displayMode, setDisplayMode] = useState('none');
+    const [currentModalId, setCurrentModalId] = useState(null);
     const style = {
         display: displayMode
     }
 
     const handleClickCard = (card) => {
-        console.log(card)
+        setCurrentModalId(card)
         setDisplayMode('block');
     }
 
@@ -39,7 +39,7 @@ export default function Landing() {
 
     return (
         <div className="main">
-            <Modal style={style} closeModal={closeModal} />
+            <Modal style={style} closeModal={closeModal} id = {currentModalId} />
             <div id="top" />
             <div id="navbar-wrapper">
                 <div className="nav-list">
@@ -90,11 +90,11 @@ export default function Landing() {
                             </div>
                         </div>
                         <div className="exp-content">
-                            <div className="exp-col" onClick = {() => handleClickCard(1)}>
+                            <div className="exp-col" onClick = {() => handleClickCard(2)}>
                                 {/* <Working1 /> */}
                                 <Card title={"Plan de Vol International"} type={"short-display"} />
                             </div>
-                            <div className="exp-col" onClick = {() => handleClickCard(2)}>
+                            <div className="exp-col" onClick = {() => handleClickCard(1)}>
                                 <Card title={"HD Telecom Inc."} type={"short-display"} />
                             </div>
                         </div>

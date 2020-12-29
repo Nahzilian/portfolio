@@ -4,12 +4,13 @@ import Tilty from 'react-tilty';
 export default function Card(props) {
     if (props.type === "short-display") {
         return (
-            <Tilty reset reverse glare 
+            <Tilty 
             className="card-title" 
             easing = {"cubic-bezier(.03,.98,.52,.99)"}
+            reset reverse glare 
             maxGlare = {0.5}
             scale={1.05}
-            style={{ transformStyle: 'preserve-3d', borderRadius:10 }}
+            style={{ transformStyle: 'preserve-3d', transform: 'perspective(1000px)', display: 'flex'}}
             >
                 <div style={{ transform: 'translateZ(30px)' }}>
                     <div className="text underline">{props.title}</div>
@@ -17,12 +18,12 @@ export default function Card(props) {
             </Tilty>
         )
     }
-    // return (
-    //     <div className="card-title">
-    //         <div className="overlay">
-    //             <div className="text">Hello World</div>
-    //         </div>
-    //     </div>
-    // )
+    return (
+        <div className="card-title">
+            <div className="overlay">
+                <div className="text">Hello World</div>
+            </div>
+        </div>
+    )
 
 }
