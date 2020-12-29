@@ -4,17 +4,21 @@ import Card from './Card';
 import Modal from './Modal';
 
 export default function Landing() {
-    const temp = [{'id':1, 'content':'temp'},{'id':2, 'content':'temp'},{'id':3, 'content':'temp'}]
-
     const [progressPercentage, setProgressPercentage] = useState(null);
     const [displayMode, setDisplayMode] = useState('none')
     const style = {
-        display:displayMode
+        display: displayMode
     }
 
     const handleClickCard = (card) => {
-
+        console.log(card)
+        setDisplayMode('block');
     }
+
+    const closeModal = () => {
+        setDisplayMode('none');
+    }
+
     const progressMainStyle = {
         position: 'absolute',
         width: "15px",
@@ -35,15 +39,15 @@ export default function Landing() {
 
     return (
         <div className="main">
-            <Modal/>
+            <Modal style={style} closeModal={closeModal} />
             <div id="top" />
             <div id="navbar-wrapper">
-                <div>
-                    <a href="#top">Home</a> |
-                    <a href="#experience">Experience</a> |
-                    <a href="#top">Education</a> |
-                    <a href="/python/">Contact</a>
-
+                <div className="nav-list">
+                    <a href="#top" className="nav-items">Home</a>
+                    <a href="#experience" className="nav-items">Experience</a>
+                    <a href="#project" className="nav-items">Project</a>
+                    <a href="#top" className="nav-items">Education</a>
+                    <a href="#top" className="nav-items">Contact</a>
                 </div>
             </div>
             <div className="progress-bar">
@@ -79,15 +83,19 @@ export default function Landing() {
 
                 <div id="experience-wrapper">
                     <div id="experience">
-                        <div className="exp-content">
-                            <div className="exp-col">
-                                <Working1 />
+                        <div className = "upper-center-text-wrapper">
+                            <div className = "main-title underline">Experience</div>
+                            <div className = "upper-subtitle">
+                                What I do ...
                             </div>
-                            <div className="exp-col">
-                                <div className="cards-experience">
-                                    <Card title = {"Plan de Vol International"} content = {temp} type = {"short-display"}/>
-                                    <Card title = {"HD Telecom Inc."} content = {temp} type = {"short-display"}/>
-                                </div>
+                        </div>
+                        <div className="exp-content">
+                            <div className="exp-col" onClick = {() => handleClickCard(1)}>
+                                {/* <Working1 /> */}
+                                <Card title={"Plan de Vol International"} type={"short-display"} />
+                            </div>
+                            <div className="exp-col" onClick = {() => handleClickCard(2)}>
+                                <Card title={"HD Telecom Inc."} type={"short-display"} />
                             </div>
                         </div>
                     </div>
