@@ -2,6 +2,12 @@ import React from 'react'
 import Tilty from 'react-tilty';
 
 export default function Card(props) {
+
+    const shortStyle = {
+        backgroundImage: `url(${props.bg})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+    }
     if (props.type === "short-display") {
         return (
             <Tilty 
@@ -10,6 +16,7 @@ export default function Card(props) {
             reset reverse glare 
             maxGlare = {0.5}
             scale={1.05}
+            gyroscope = {false}
             style={{ transformStyle: 'preserve-3d', transform: 'perspective(1000px)', display: 'flex'}}
             >
                 <div style={{ transform: 'translateZ(30px)' }}>

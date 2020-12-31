@@ -1,13 +1,13 @@
 [
     {
         "id": 1,
-        "languages": "",
+        "languages": [],
         "name": "HD Telecom Inc.",
         "content": "HD Telecom Inc. was where I landed my first intern. I worked both as a full-time and part-time, full-stack developer. During my time working for HD Telecom Inc., I had gained a vast amount of knowledge and experience in web development systems and architecture. My primary responsibilities are making web services such as CRON Job, Front-end and Back-end, and designing the webpages’ architecture systems.",
         "side_projects": [
             {
                 "id": 1,
-                "languages": "ReactJS, NodeJS, C#.NET, Material UI, React Timeseries Chart, MongoDB, MS SQL Server manangement, Redis",
+                "languages": ["ReactJS"," NodeJS"," C#.NET"," Material UI"," React Timeseries Chart"," MongoDB"," MS SQL Server manangement"," Redis"],
                 "name": "Wifi time attendance",
                 "experience": [
                     "Designed and developed the back-end, logging and caching systems",
@@ -19,7 +19,7 @@
             },
             {
                 "id": 2,
-                "languages": "ReactJS, NodeJS, C#.NET, Material UI, JWT",
+                "languages": ["ReactJS","NodeJS", "C#.NET", "Material UI", "JWT"],
                 "name": "VietBiz",
                 "experience": [
                     "Participated in designing the web’s architecture and was involved in the web page deployment process",
@@ -34,13 +34,13 @@
     },
     {
         "id": 2,
-        "languages": "",
+        "languages": [],
         "name": "Plan de Vol International",
         "content": "Recently, I had my internship with Plan de Vol International (Flightplan) international as a fulltime full-stack developer last summer. FlightPlan has a fast-paced working environment with a lot of pressure to push out products for customers. My responsibilities were mainly focused on the front-end side, where I worked on new features, maintained, debugged web UI. Additionally, I was assigned to make mockup designs for new projects, customize SVG icons using Figma and AdobeXD, and assists my peers in debugging features, setting up and deploying products onto the server.",
         "side_projects": [
             {
                 "id": 1,
-                "languages": "ReactJS, NodeJS, C#.NET, Material UI, React Timeseries Chart, MongoDB, MS SQL Server manangement",
+                "languages": ["ReactJS"," NodeJS"," C#.NET"," Material UI"," React Timeseries Chart"," MongoDB"," MS SQL Server manangement"],
                 "name": "Alpha FlitePLAN",
                 "experience": [
                     "Fetched live data using lazy loading and listing daily flights, flight records based on date and time",
@@ -51,7 +51,7 @@
             },
             {
                 "id": 2,
-                "languages": "ReactJS, NodeJS, C#.NET, Material UI, React Timeseries Chart",
+                "languages": ["ReactJS"," NodeJS"," C#.NET"," Material UI"," React Timeseries Chart"],
                 "name": "FlitePLAN NOTAMs Viewer",
                 "experience": [
                     "Restructured and re-built the front-end system of the websites for clarity and upcoming features.",
@@ -62,7 +62,7 @@
             },
             {
                 "id": 3,
-                "languages": "ReactJS, NodeJS, C#.NET, Material UI, React Timeseries Chart, MongoDB, MS SQL Server manangement",
+                "languages": ["ReactJS"," NodeJS"," C#.NET"," Material UI"," React Timeseries Chart"," MongoDB"," MS SQL Server manangement"],
                 "name": "FlitePLAN GNIC - Global Navigation Intelligence Center",
                 "experience": [
                     "Debugged and fixed existed errors relating to data and file exports at the front-end UI representation.",
@@ -72,7 +72,7 @@
             },
             {
                 "id": 4,
-                "languages": "ReactJS, NodeJS, C#.NET, Material UI, React Timeseries Chart, MongoDB, MS SQL Server manangement",
+                "languages": ["ReactJS"," NodeJS"," C#.NET"," Material UI"," React Timeseries Chart"," MongoDB"," MS SQL Server manangement"],
                 "name": "Plan vs Flown - 3D flight simulation",
                 "experience": [
                     "Developed new features along with new UI and customized SVG icons for existed 3D map-based websites",
@@ -86,7 +86,7 @@
     },
     {
         "id": 3,
-        "languages": "",
+        "languages": ["HTML5"," CSS3"," JavaScript"],
         "name": "Binh's nail & Spa",
         "side_projects": [],
         "is_company": false,
@@ -99,7 +99,7 @@
     },
     {
         "id": 4,
-        "languages": "Python, ReactJs, Material UI, NodeJs",
+        "languages": ["Python"," ReactJs"," Material UI"," NodeJs"],
         "assetsName":"searchEngine",
         "name": "Search engine",
         "content":"A group project to learn about web retrieval infrastructure and data representation for the search engine. The web app used the vector space model and ranking to distribute and calculate the relevance scores.",
@@ -114,9 +114,14 @@
     },
     {
         "id": 5,
-        "languages": "@material-ui/core, @material-ui/lab, axios, gh-pages, react-dom, react-fade-in, react-router-dom",
+        "languages": ["@material-ui/core"," @material-ui/lab"," axios"," gh-pages"," react-dom"," react-fade-in"," react-router-dom"],
         "name": "Shopify UX Design Chalenge",
-        "content": "A shopify challenge for UX developer position",
+        "content": "Shopify's challenge for UX developer position",
+        "experience": [
+            "Designed simple caching on client side",
+            "Responsive design, mobile friendly",
+            "API request execution and data distribution"
+        ],
         "side_projects": [],
         "is_company": false,
         "urls": ["https://nahzilian.github.io/shopify-ux-dev/"]

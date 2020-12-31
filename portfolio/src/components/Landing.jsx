@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import Card from './Card';
 import Modal from './Modal';
 
+import Bg1 from '../assets/pictures/code.jpg';
+import Bg2 from '../assets/pictures/plane-wing.jpg';
+import Bg3 from '../assets/pictures/spa.jpg';
+
+
 export default function Landing() {
     const [progressPercentage, setProgressPercentage] = useState(null);
     const [displayMode, setDisplayMode] = useState('none');
@@ -44,10 +49,9 @@ export default function Landing() {
             <div id="navbar-wrapper">
                 <div className="nav-list">
                     <a href="#top" className="nav-items">Home</a>
-                    <a href="#experience" className="nav-items">Experience</a>
-                    <a href="#project" className="nav-items">Project</a>
-                    <a href="#top" className="nav-items">Education</a>
-                    <a href="#top" className="nav-items">Contact</a>
+                    <a href="#experience-wrapper" className="nav-items">Experience</a>
+                    <a href="#education-wrapper" className="nav-items">Education</a>
+                    <a href="#contact-wrapper" className="nav-items">Contact</a>
                 </div>
             </div>
             <div className="progress-bar">
@@ -92,12 +96,31 @@ export default function Landing() {
                         <div className="exp-content">
                             <div className="exp-col" onClick = {() => handleClickCard(2)}>
                                 {/* <Working1 /> */}
-                                <Card title={"Plan de Vol International"} type={"short-display"} />
+                                <Card title={"Plan de Vol International"} bg = {Bg2} type={"short-display"} />
                             </div>
                             <div className="exp-col" onClick = {() => handleClickCard(1)}>
-                                <Card title={"HD Telecom Inc."} type={"short-display"} />
+                                <Card title={"HD Telecom Inc."} bg = {Bg1} type={"short-display"} />
+                            </div>
+                            <div className="exp-col" onClick = {() => handleClickCard(3)}>
+                                <Card title={"Binh's nail & spa"} bg = {Bg3} type={"short-display"} />
+                            </div>
+                            <div className="exp-col" onClick = {() => handleClickCard(4)}>
+                                <Card title={"Searina - Search engine"} bg = {Bg3} type={"short-display"} />
+                            </div>
+                            <div className="exp-col" onClick = {() => handleClickCard(5)}>
+                                <Card title={"The Shoppies movie nomination"} bg = {Bg3} type={"short-display"} />
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div id="education-wrapper">
+                    <div id="education">
+                        Education
+                    </div>
+                </div>
+                <div id="contact-wrapper">
+                    <div id="contact">
+                        Contact
                     </div>
                 </div>
             </div>
