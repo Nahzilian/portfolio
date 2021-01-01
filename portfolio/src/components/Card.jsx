@@ -1,13 +1,7 @@
 import React from 'react'
 import Tilty from 'react-tilty';
 
-export default function Card(props) {
-
-    const shortStyle = {
-        backgroundImage: `url(${props.bg})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-    }
+export default function Card(props) {    
     if (props.type === "short-display") {
         return (
             <Tilty 
@@ -26,9 +20,19 @@ export default function Card(props) {
         )
     }
     return (
-        <div className="card-title">
-            <div className="overlay">
-                <div className="text">Hello World</div>
+        <div className="detailed-cards frosted-glass">
+            <div className="detailed=card-title">{props.data?props.data.name:null}</div>
+            <div className = 'detailed-card-body'>
+                <div className = 'detailed-card-content'>
+                    <ul>
+                    {props.data && props.data.experience.length > 0 ?props.data.experience.map(x => <li>{x}</li>):null}
+                    </ul>
+                </div>
+                <div className = 'detailed-card-languages'>
+                    <ul>
+                        {props.data && props.data.languages.length > 0 ?props.data.languages.map(x => <li>{x}</li>):null}
+                    </ul>
+                </div>
             </div>
         </div>
     )

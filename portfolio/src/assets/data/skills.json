@@ -125,5 +125,19 @@
         "side_projects": [],
         "is_company": false,
         "urls": ["https://nahzilian.github.io/shopify-ux-dev/"]
+    },
+    {
+        "id": 6,
+        "languages": ["HTML5","CSS3","JavaScript","Bootstrap"],
+        "name": "Duc Quan company",
+        "content": "Shopify's challenge for UX developer position",
+        "experience": [
+            "Designed simple caching on client side",
+            "Responsive design, mobile friendly",
+            "API request execution and data distribution"
+        ],
+        "side_projects": [],
+        "is_company": false,
+        "urls": ["https://nahzilian.github.io/ducquan/"]
     }
 ]

@@ -5,18 +5,34 @@ import Modal from './Modal';
 import Bg1 from '../assets/pictures/code.jpg';
 import Bg2 from '../assets/pictures/plane-wing.jpg';
 import Bg3 from '../assets/pictures/spa.jpg';
+import Bg4 from '../assets/pictures/search.jpg';
+import Bg5 from '../assets/pictures/movie.jpg';
+import Bg6 from '../assets/pictures/working.jpg';
 
 
 export default function Landing() {
+    const bgObj = [
+        { bg: Bg1 },
+        { bg: Bg2 },
+        { bg: Bg3 },
+        { bg: Bg4 },
+        { bg: Bg5 },
+        { bg: Bg6 },
+    ]
     const [progressPercentage, setProgressPercentage] = useState(null);
     const [displayMode, setDisplayMode] = useState('none');
     const [currentModalId, setCurrentModalId] = useState(null);
+    const [modalBackground, setModalBackground] = useState(Bg1);
     const style = {
-        display: displayMode
+        display: displayMode,
+        backgroundImage: `url(${modalBackground})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
     }
 
     const handleClickCard = (card) => {
-        setCurrentModalId(card)
+        setModalBackground(bgObj[card-1].bg);
+        setCurrentModalId(card);
         setDisplayMode('block');
     }
 
@@ -44,7 +60,7 @@ export default function Landing() {
 
     return (
         <div className="main">
-            <Modal style={style} closeModal={closeModal} id = {currentModalId} />
+            <Modal style={style} closeModal={closeModal} id={currentModalId} />
             <div id="top" />
             <div id="navbar-wrapper">
                 <div className="nav-list">
@@ -87,28 +103,31 @@ export default function Landing() {
 
                 <div id="experience-wrapper">
                     <div id="experience">
-                        <div className = "upper-center-text-wrapper">
-                            <div className = "main-title underline">Experience</div>
-                            <div className = "upper-subtitle">
+                        <div className="upper-center-text-wrapper">
+                            <div className="main-title underline">Experience</div>
+                            <div className="upper-subtitle">
                                 What I do ...
                             </div>
                         </div>
                         <div className="exp-content">
-                            <div className="exp-col" onClick = {() => handleClickCard(2)}>
+                            <div className="exp-col" onClick={() => handleClickCard(1)}>
+                                <Card title={"HD Telecom Inc."} type={"short-display"} />
+                            </div>
+                            <div className="exp-col" onClick={() => handleClickCard(2)}>
                                 {/* <Working1 /> */}
-                                <Card title={"Plan de Vol International"} bg = {Bg2} type={"short-display"} />
+                                <Card title={"Plan de Vol International"} type={"short-display"} />
                             </div>
-                            <div className="exp-col" onClick = {() => handleClickCard(1)}>
-                                <Card title={"HD Telecom Inc."} bg = {Bg1} type={"short-display"} />
+                            <div className="exp-col" onClick={() => handleClickCard(3)}>
+                                <Card title={"Binh's nail & spa"} type={"short-display"} />
                             </div>
-                            <div className="exp-col" onClick = {() => handleClickCard(3)}>
-                                <Card title={"Binh's nail & spa"} bg = {Bg3} type={"short-display"} />
+                            <div className="exp-col" onClick={() => handleClickCard(4)}>
+                                <Card title={"Searina - Search engine"} type={"short-display"} />
                             </div>
-                            <div className="exp-col" onClick = {() => handleClickCard(4)}>
-                                <Card title={"Searina - Search engine"} bg = {Bg3} type={"short-display"} />
+                            <div className="exp-col" onClick={() => handleClickCard(5)}>
+                                <Card title={"The Shoppies movie nomination"} type={"short-display"} />
                             </div>
-                            <div className="exp-col" onClick = {() => handleClickCard(5)}>
-                                <Card title={"The Shoppies movie nomination"} bg = {Bg3} type={"short-display"} />
+                            <div className="exp-col" onClick={() => handleClickCard(6)}>
+                                <Card title={"Duc Quan Company"} type={"short-display"} />
                             </div>
                         </div>
                     </div>
