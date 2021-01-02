@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "languages": [],
+        "name": "HD Telecom Inc.",
+        "content": "HD Telecom Inc. was where I landed my first intern. I worked both as a full-time and part-time, full-stack developer. During my time working for HD Telecom Inc., I had gained a vast amount of knowledge and experience in web development systems and architecture. My primary responsibilities are making web services such as CRON Job, Front-end and Back-end, and designing the webpages’ architecture systems.",
+        "side_projects": [
+            {
+                "id": 1,
+                "languages": ["ReactJS"," NodeJS"," C#.NET"," Material UI"," React Timeseries Chart"," MongoDB"," MS SQL Server manangement"," Redis"],
+                "name": "Wifi time attendance",
+                "experience": [
+                    "Designed and developed the back-end, logging and caching systems",
+                    "Created and deployed CRON job web services for retrieving information.",
+                    "Asynchronous design for retrieving new data from the back-end server using lazy loading method.",
+                    "Participated in designing the web’s architecture and web page deployment process",
+                    "Worked with customizable charts and tables to display dynamic data"
+                ]
+            },
+            {
+                "id": 2,
+                "languages": ["ReactJS","NodeJS", "C#.NET", "Material UI", "JWT"],
+                "name": "VietBiz",
+                "experience": [
+                    "Participated in designing the web’s architecture and was involved in the web page deployment process",
+                    "Architected throttle system, authentication system DDoS attack and prevent information breach.",
+                    "Designed and developed the back-end and caching systems",
+                    "Created responsive UI design for websites"
+                ]
+            }
+        ],
+        "is_company": true,
+        "urls": []
+    },
+    {
+        "id": 2,
+        "languages": [],
+        "name": "Plan de Vol International",
+        "content": "Recently, I had my internship with Plan de Vol International (Flightplan) international as a fulltime full-stack developer last summer. FlightPlan has a fast-paced working environment with a lot of pressure to push out products for customers. My responsibilities were mainly focused on the front-end side, where I worked on new features, maintained, debugged web UI. Additionally, I was assigned to make mockup designs for new projects, customize SVG icons using Figma and AdobeXD, and assists my peers in debugging features, setting up and deploying products onto the server.",
+        "side_projects": [
+            {
+                "id": 1,
+                "languages": ["ReactJS"," NodeJS"," C#.NET"," Material UI"," React Timeseries Chart"," MongoDB"," MS SQL Server manangement"],
+                "name": "Alpha FlitePLAN",
+                "experience": [
+                    "Fetched live data using lazy loading and listing daily flights, flight records based on date and time",
+                    "Generated map-based polygons and waypoints to represent collected information from open sources",
+                    "Re-worked on graphs and tables display as well as debugging errors in the data flow",
+                    "Built responsive UI design using Angular, Angular Material and Leaflet map"
+                ]
+            },
+            {
+                "id": 2,
+                "languages": ["ReactJS"," NodeJS"," C#.NET"," Material UI"," React Timeseries Chart"],
+                "name": "FlitePLAN NOTAMs Viewer",
+                "experience": [
+                    "Restructured and re-built the front-end system of the websites for clarity and upcoming features.",
+                    "Generated new map-based components and represent related information with dialogues.",
+                    "Designed and manipulated new dataflow for information displays and queries using lazy loading.",
+                    "Re-implemented authentication system using JWT."
+                ]
+            },
+            {
+                "id": 3,
+                "languages": ["ReactJS"," NodeJS"," C#.NET"," Material UI"," React Timeseries Chart"," MongoDB"," MS SQL Server manangement"],
+                "name": "FlitePLAN GNIC - Global Navigation Intelligence Center",
+                "experience": [
+                    "Debugged and fixed existed errors relating to data and file exports at the front-end UI representation.",
+                    "Restructured UI component to enhance user experience and web page performance",
+                    "Implemented and styled 3rd-party Insight tools with a variety of charts and tables options"
+                ]
+            },
+            {
+                "id": 4,
+                "languages": ["ReactJS"," NodeJS"," C#.NET"," Material UI"," React Timeseries Chart"," MongoDB"," MS SQL Server manangement"],
+                "name": "Plan vs Flown - 3D flight simulation",
+                "experience": [
+                    "Developed new features along with new UI and customized SVG icons for existed 3D map-based websites",
+                    "Implement lazy loading and asynchronous methods to constantly update live data",
+                    "Generated map-based polygons and waypoints to represent collected information from open sources"
+                ]
+            }
+        ],
+        "is_company": true,
+        "urls": []
+    },
+    {
+        "id": 3,
+        "languages": ["HTML5"," CSS3"," JavaScript"],
+        "name": "Binh's nail & Spa",
+        "side_projects": [],
+        "is_company": false,
+        "urls": ["http://binhsnailspa.com/"],
+        "experience": [
+            "Designed and developed front-end, back-end structures with Caching and Throttling system.",
+            "Implemented mailing system services and the mailing form using Bootstrap styling.",
+            "Edited and re-adjusted images to improve the load time of the existing pages."
+        ]
+    },
+    {
+        "id": 4,
+        "languages": ["Python"," ReactJs"," Material UI"," NodeJs"],
+        "assetsName":"searchEngine",
+        "name": "Search engine",
+        "content":"A group project to learn about web retrieval infrastructure and data representation for the search engine. The web app used the vector space model and ranking to distribute and calculate the relevance scores.",
+        "experience": [
+            "Designed and developed front-end, back-end structures with Caching and Throttling system.",
+            "Implemented mailing system services and the mailing form using Bootstrap styling.",
+            "Edited and re-adjusted images to improve the load time of the existing pages."
+        ],
+        "side_projects": [],
+        "is_company": false,
+        "urls": []
+    },
+    {
+        "id": 5,
+        "languages": ["@material-ui/core"," @material-ui/lab"," axios"," gh-pages"," react-dom"," react-fade-in"," react-router-dom"],
+        "name": "Shopify UX Design Chalenge",
+        "content": "Shopify's challenge for UX developer position",
+        "experience": [
+            "Designed simple caching on client side",
+            "Responsive design, mobile friendly",
+            "API request execution and data distribution"
+        ],
+        "side_projects": [],
+        "is_company": false,
+        "urls": ["https://nahzilian.github.io/shopify-ux-dev/"]
+    },
+    {
+        "id": 6,
+        "languages": ["HTML5","CSS3","JavaScript","Bootstrap"],
+        "name": "Duc Quan company",
+        "content": "Shopify's challenge for UX developer position",
+        "experience": [
+            "Designed simple company's portfolio",
+            "Responsive design, mobile friendly"
+        ],
+        "side_projects": [],
+        "is_company": false,
+        "urls": ["https://nahzilian.github.io/ducquan/"]
+    }
+]
