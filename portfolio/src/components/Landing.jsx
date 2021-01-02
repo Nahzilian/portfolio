@@ -25,6 +25,9 @@ export default function Landing() {
     const [modalBackground, setModalBackground] = useState(Bg1);
     const style = {
         display: displayMode,
+    }
+
+    const modalStyle = {
         backgroundImage: `url(${modalBackground})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
@@ -60,7 +63,7 @@ export default function Landing() {
 
     return (
         <div className="main">
-            <Modal style={style} closeModal={closeModal} id={currentModalId} />
+            <Modal style={style} closeModal={closeModal} modalStyle = {modalStyle} id={currentModalId} />
             <div id="top" />
             <div id="navbar-wrapper">
                 <div className="nav-list">
