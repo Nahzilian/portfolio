@@ -9,6 +9,12 @@ import Bg4 from '../assets/pictures/search.jpg';
 import Bg5 from '../assets/pictures/movie.jpg';
 import Bg6 from '../assets/pictures/working.jpg';
 
+import Rye2 from '../assets/pictures/ryerson2.jpg'
+import Rye3 from '../assets/pictures/ryerson3.jpg'
+import Rye4 from '../assets/pictures/ryerson4.jpg'
+import Rye5 from '../assets/pictures/ryerson5.jpg'
+import Rye6 from '../assets/pictures/ryerson6.jpg'
+import Rye7 from '../assets/pictures/ryerson7.jpg'
 
 export default function Landing() {
     const bgObj = [
@@ -34,7 +40,7 @@ export default function Landing() {
     }
 
     const handleClickCard = (card) => {
-        setModalBackground(bgObj[card-1].bg);
+        setModalBackground(bgObj[card - 1].bg);
         setCurrentModalId(card);
         setDisplayMode('block');
     }
@@ -63,7 +69,7 @@ export default function Landing() {
 
     return (
         <div className="main">
-            <Modal style={style} closeModal={closeModal} modalStyle = {modalStyle} id={currentModalId} />
+            <Modal style={style} closeModal={closeModal} modalStyle={modalStyle} id={currentModalId} />
             <div id="top" />
             <div id="navbar-wrapper">
                 <div className="nav-list">
@@ -137,7 +143,25 @@ export default function Landing() {
                 </div>
                 <div id="education-wrapper">
                     <div id="education">
-                        Education
+                        <div className='education-content'>
+                            <div className="upper-subtitle underline">Ryerson University - Bachelors of Computer Science (Honors)</div>
+                            <div className='education-context'>
+                                <div id="education-gallery">
+                                    <img src={Rye2} />
+                                    <img src={Rye3} />
+                                    <img src={Rye4} />
+                                    <img src={Rye5} />
+                                    <img src={Rye6} />
+                                    <img src={Rye7} />
+                                </div>
+                            </div>
+                        </div>
+                        <div className='education-content'>
+                            <div className="upper-subtitle underline-white">Education</div>
+                            <div className = "detailed-content">
+                                Lorem
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="contact-wrapper">

@@ -6,7 +6,7 @@ export default function Card(props) {
     if (props.type === "short-display") {
         return (
             <Tilty
-                className="card-title"
+                className="card-title lazy"
                 easing={"cubic-bezier(.03,.98,.52,.99)"}
                 reset reverse glare
                 maxGlare={0.5}

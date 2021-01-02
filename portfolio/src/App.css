@@ -14,7 +14,6 @@ html{
 
 body{
     width: 100%;
-    height: 200vh;
     background: rgb(0,0,0);
     color:white;
     overflow-y: scroll;
@@ -49,11 +48,42 @@ body::-webkit-scrollbar {
   background-color: #11284d;
 }
 
+
+#education-wrapper{
+  background-image: url("./assets/pictures/ryerson1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.detailed-content{
+  position: relative;
+  padding:10px 20px;
+  width: 100%;
+}
+
 .main-title{
   font-size: 90px;
 }
 
-#introduction, #experience{
+  #education-gallery{
+    position: relative;
+    width: 100%;
+    line-height: 2;
+    -webkit-column-count: 3;
+    -webkit-column-gap:   20px;
+    -moz-column-count:    3;
+    -moz-column-gap:      20px;
+    column-count:         3;
+    row-gap: 20px;
+    column-gap:           20px;  
+  }
+  #education img {
+    /* Just in case there are inline attributes */
+    width: 100% !important;
+    height: auto !important;
+  }
+#introduction, #experience,#education{
     position: absolute;
     top:50%;
     left:50%;
@@ -64,7 +94,32 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
 }
+.education-content{
+  
+  width: 50vw;
+  height: auto;
+  padding:20px;
+  border-radius: 20px;
+}
+.education-content:nth-child(1){
+  background-color: rgb(29, 29, 29);
+  position: absolute;
+  top:0;
+  left:0;
+  transform: translate(-70%,-70%);
+}
+.education-content:nth-child(2){
+  background-color: rgb(0, 141, 146);
+  position: absolute;
+  top:0;
+  left:0;
+  transform: translate(-30%,80%);
+}
 
+.education-context{
+  display: flex;
+  flex-direction: row;
+}
 #navbar-wrapper{
   position: fixed;
   top:0;
@@ -72,7 +127,6 @@ body::-webkit-scrollbar {
   z-index: 101;
   float: right;
   margin:20px;
-
 }
 
 .nav-list{
