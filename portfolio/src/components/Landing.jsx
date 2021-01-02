@@ -1,10 +1,48 @@
 import React, { useState } from 'react';
-import { ReactComponent as Working1 } from '../assets/svg/working_1.svg'
-import Card from './Card'
-export default function Landing() {
-    const temp = [{'id':1, 'content':'temp'},{'id':2, 'content':'temp'},{'id':3, 'content':'temp'}]
+import Card from './Card';
+import Modal from './Modal';
 
+import Bg1 from '../assets/pictures/code.jpg';
+import Bg2 from '../assets/pictures/plane-wing.jpg';
+import Bg3 from '../assets/pictures/spa.jpg';
+import Bg4 from '../assets/pictures/search.jpg';
+import Bg5 from '../assets/pictures/movie.jpg';
+import Bg6 from '../assets/pictures/working.jpg';
+
+
+export default function Landing() {
+    const bgObj = [
+        { bg: Bg1 },
+        { bg: Bg2 },
+        { bg: Bg3 },
+        { bg: Bg4 },
+        { bg: Bg5 },
+        { bg: Bg6 },
+    ]
     const [progressPercentage, setProgressPercentage] = useState(null);
+    const [displayMode, setDisplayMode] = useState('none');
+    const [currentModalId, setCurrentModalId] = useState(null);
+    const [modalBackground, setModalBackground] = useState(Bg1);
+    const style = {
+        display: displayMode,
+    }
+
+    const modalStyle = {
+        backgroundImage: `url(${modalBackground})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+    }
+
+    const handleClickCard = (card) => {
+        setModalBackground(bgObj[card-1].bg);
+        setCurrentModalId(card);
+        setDisplayMode('block');
+    }
+
+    const closeModal = () => {
+        setDisplayMode('none');
+    }
+
     const progressMainStyle = {
         position: 'absolute',
         width: "15px",
@@ -25,15 +63,14 @@ export default function Landing() {
 
     return (
         <div className="main">
+            <Modal style={style} closeModal={closeModal} modalStyle = {modalStyle} id={currentModalId} />
             <div id="top" />
-            {/* <div className = "card glass"> Hello </div> */}
             <div id="navbar-wrapper">
-                <div>
-                    <a href="#top">Home</a> |
-                    <a href="#experience">Experience</a> |
-                    <a href="#top">Education</a> |
-                    <a href="/python/">Contact</a>
-
+                <div className="nav-list">
+                    <a href="#top" className="nav-items">Home</a>
+                    <a href="#experience-wrapper" className="nav-items">Experience</a>
+                    <a href="#education-wrapper" className="nav-items">Education</a>
+                    <a href="#contact-wrapper" className="nav-items">Contact</a>
                 </div>
             </div>
             <div className="progress-bar">
@@ -69,17 +106,43 @@ export default function Landing() {
 
                 <div id="experience-wrapper">
                     <div id="experience">
-                        <div className="exp-content">
-                            <div className="exp-col">
-                                <Working1 />
-                            </div>
-                            <div className="exp-col">
-                                <div className="cards-experience">
-                                    <Card title = {"test"} content = {temp} type = {"short-display"}/>
-                                    <Card title = {"test"} content = {temp} type = {"short-display"}/>
-                                </div>
+                        <div className="upper-center-text-wrapper">
+                            <div className="main-title underline">Experience</div>
+                            <div className="upper-subtitle">
+                                What I do ...
                             </div>
                         </div>
+                        <div className="exp-content">
+                            <div className="exp-col" onClick={() => handleClickCard(1)}>
+                                <Card title={"HD Telecom Inc."} type={"short-display"} />
+                            </div>
+                            <div className="exp-col" onClick={() => handleClickCard(2)}>
+                                {/* <Working1 /> */}
+                                <Card title={"Plan de Vol International"} type={"short-display"} />
+                            </div>
+                            <div className="exp-col" onClick={() => handleClickCard(3)}>
+                                <Card title={"Binh's nail & spa"} type={"short-display"} />
+                            </div>
+                            <div className="exp-col" onClick={() => handleClickCard(4)}>
+                                <Card title={"Searina - Search engine"} type={"short-display"} />
+                            </div>
+                            <div className="exp-col" onClick={() => handleClickCard(5)}>
+                                <Card title={"The Shoppies movie nomination"} type={"short-display"} />
+                            </div>
+                            <div className="exp-col" onClick={() => handleClickCard(6)}>
+                                <Card title={"Duc Quan Company"} type={"short-display"} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="education-wrapper">
+                    <div id="education">
+                        Education
+                    </div>
+                </div>
+                <div id="contact-wrapper">
+                    <div id="contact">
+                        Contact
                     </div>
                 </div>
             </div>
