@@ -132,9 +132,8 @@
         "name": "Duc Quan company",
         "content": "Shopify's challenge for UX developer position",
         "experience": [
-            "Designed simple caching on client side",
-            "Responsive design, mobile friendly",
-            "API request execution and data distribution"
+            "Designed simple company's portfolio",
+            "Responsive design, mobile friendly"
         ],
         "side_projects": [],
         "is_company": false,

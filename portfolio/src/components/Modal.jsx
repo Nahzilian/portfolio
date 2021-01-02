@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './Card'
 import skillList from '../assets/data/skills.json'
+import Accordion from './Accordion'
 export default function Modal(props) {
 
     const data = skillList[skillList.findIndex(x => parseInt(x.id) === parseInt(props.id))];
@@ -44,13 +45,16 @@ export default function Modal(props) {
                         <div className="content-block">
                             {data.content ? data.content : null}
                         </div>
-
-                        <div className="coding-list">
-                            {data.languages ? data.languages : null}
-                        </div>
                         <div className="experience-blk">
-                            {data.experience.length > 0 ? data.experience.map(x => <div>{x}</div>) : null}
+                            <ul>
+                                {data.experience.length > 0 ? data.experience.map(x => <li>{x}</li>) : null}
+                            </ul>
                         </div>
+                        {data.languages?<Accordion
+                            title="Codding languages and frameworks"
+                            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                            data = {data}
+                        />: null}
                     </div>: null}
                 <div className="embeded-side">
                     {data && data.urls.length > 0 ? <iframe src={data.urls[0]} width="100%" height="100%"></iframe> : null}

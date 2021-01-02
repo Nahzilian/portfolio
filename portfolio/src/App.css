@@ -564,6 +564,10 @@ body::-webkit-scrollbar {
   animation: slideAnimation2 1.5s ease forwards 0.5s;
 }
 
+.experience-blk{
+  padding:20px;
+}
+
 .content-side{
   position: absolute;
   top:0;
