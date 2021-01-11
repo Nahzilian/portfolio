@@ -9,12 +9,6 @@ import Bg4 from '../assets/pictures/search.jpg';
 import Bg5 from '../assets/pictures/movie.jpg';
 import Bg6 from '../assets/pictures/working.jpg';
 
-import Rye2 from '../assets/pictures/ryerson2.jpg'
-import Rye3 from '../assets/pictures/ryerson3.jpg'
-import Rye4 from '../assets/pictures/ryerson4.jpg'
-import Rye5 from '../assets/pictures/ryerson5.jpg'
-import Rye6 from '../assets/pictures/ryerson6.jpg'
-import Rye7 from '../assets/pictures/ryerson7.jpg'
 
 export default function Landing() {
     const bgObj = [
@@ -143,30 +137,25 @@ export default function Landing() {
                 </div>
                 <div id="education-wrapper">
                     <div id="education">
-                        <div className='education-content'>
-                            <div className="upper-subtitle underline">Ryerson University - Bachelors of Computer Science (Honors)</div>
-                            <div className='education-context'>
-                                <div id="education-gallery">
-                                    <img src={Rye2} />
-                                    <img src={Rye3} />
-                                    <img src={Rye4} />
-                                    <img src={Rye5} />
-                                    <img src={Rye6} />
-                                    <img src={Rye7} />
-                                </div>
-                            </div>
-                        </div>
-                        <div className='education-content'>
-                            <div className="upper-subtitle underline-white">Education</div>
-                            <div className = "detailed-content">
-                                Lorem
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
                 <div id="contact-wrapper">
                     <div id="contact">
-                        Contact
+                        <div className = "contact-card frosted-glass">
+                            <div className = "left-col frosted-glass">
+                                <div className = "circle-img"/>
+                                <div className = "upper-subtitle">Contact me!</div>
+                            </div>
+                            <div className = "right-col">
+                                <strong>Contact me via</strong>
+                                <a href = "https://www.linkedin.com/in/doug-nguyen-552b06192/"><i className="fab fa-linkedin fa-3x"></i></a>
+                                <div id ="or">or</div>
+                                <strong>Follow me!</strong>
+                                <a href = "https://www.instagram.com/duc._.ng/"><i className="fab fa-instagram fa-3x"></i></a>
+                                <a href = "https://github.com/Nahzilian"><i class="fab fa-github fa-3x"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
