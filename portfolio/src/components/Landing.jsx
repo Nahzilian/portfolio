@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import Card from './Card';
 import Modal from './Modal';
-
+import { ReactComponent as EducationSvg } from '../assets/svg/education.svg';
 import Bg1 from '../assets/pictures/code.jpg';
 import Bg2 from '../assets/pictures/plane-wing.jpg';
 import Bg3 from '../assets/pictures/spa.jpg';
 import Bg4 from '../assets/pictures/search.jpg';
 import Bg5 from '../assets/pictures/movie.jpg';
 import Bg6 from '../assets/pictures/working.jpg';
+
 
 
 export default function Landing() {
@@ -34,7 +35,7 @@ export default function Landing() {
     }
 
     const handleClickCard = (card) => {
-        setModalBackground(bgObj[card-1].bg);
+        setModalBackground(bgObj[card - 1].bg);
         setCurrentModalId(card);
         setDisplayMode('block');
     }
@@ -63,7 +64,7 @@ export default function Landing() {
 
     return (
         <div className="main">
-            <Modal style={style} closeModal={closeModal} modalStyle = {modalStyle} id={currentModalId} />
+            <Modal style={style} closeModal={closeModal} modalStyle={modalStyle} id={currentModalId} />
             <div id="top" />
             <div id="navbar-wrapper">
                 <div className="nav-list">
@@ -137,12 +138,50 @@ export default function Landing() {
                 </div>
                 <div id="education-wrapper">
                     <div id="education">
-                        Education
+                        <div className="education-content frosted-glass">
+                            <EducationSvg id="animation-guy" />
+                            <div className="underline"><h1>Ryerson University</h1></div>
+                            <div className="education-details">
+                                <div className="education-col">
+                                    <div><h3>Bachelor of Science (Honors)</h3></div>
+                                    <div>3rd Year Computer Science</div>
+                                    <div>Expected graduation: 2022</div>
+                                </div>
+                                <div className="education-col">
+                                    <div><h3>Extra curricullar</h3></div>
+                                    <div>Game makers union</div>
+                                    <div>Ryerson Robotic (R3)</div>
+                                </div>
+                            </div>
+                            <br/>
+                            <div className="education-details">
+                                <div className="education-col">
+                                    <div><h3>Interest and hobbies</h3></div>
+                                    <div>Web design and development</div>
+                                    <div>Photography</div>
+                                </div>
+                                <div className="education-col"/>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div id="contact-wrapper">
                     <div id="contact">
-                        Contact
+                        <div className="contact-card frosted-glass">
+                            <div className="left-col frosted-glass">
+                                <div className="circle-img" />
+                                <div className="upper-subtitle">Contact me!</div>
+                            </div>
+                            <div className="right-col">
+                                <strong>Contact me via</strong>
+                                <a href="https://www.linkedin.com/in/doug-nguyen-552b06192/"><i className="fab fa-linkedin fa-3x"></i></a>
+                                <div id="or">or</div>
+                                <strong>Follow me!</strong>
+                                <a href="https://www.instagram.com/duc._.ng/"><i className="fab fa-instagram fa-3x"></i></a>
+                                <a href="https://github.com/Nahzilian"><i class="fab fa-github fa-3x"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -25,3 +25,5 @@ reportWebVitals();
 // for(let i = 0; i < logo.length; i++){
 //   console.log(logo[i].getTotalLength())
 // }
+
+// Lazy loading images

@@ -57,7 +57,7 @@ export default function Modal(props) {
                         />: null}
                     </div>: null}
                 <div className="embeded-side">
-                    {data && data.urls.length > 0 ? <iframe src={data.urls[0]} width="100%" height="100%"></iframe> : null}
+                    {data && data.urls.length > 0 ? <iframe title = "active-embed" loading="lazy" src={data.urls[0]} width="100%" height="100%"></iframe> : null}
                 </div>
             </div>
         </div>
