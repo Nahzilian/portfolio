@@ -50,10 +50,6 @@ body::-webkit-scrollbar {
   background-color: #11284d;
 }
 
-#contact-wrapper{
-
-}
-
 #or {
   position: relative;
   width: 300px;
@@ -88,7 +84,16 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: row;
 }
+#education{
+  display: flex;
+  flex-direction: row;
+}
 
+#animation-guy{
+  position: absolute;
+  left:-50%;
+  transform: translate(50%,0);
+}
 .contact-card .left-col{
   position:relative;
   width: 50%;
@@ -145,25 +150,14 @@ body::-webkit-scrollbar {
     flex-direction: column;
 }
 .education-content{
-  width: 50vw;
-  height: auto;
+  position: relative;
+  width: 40vw;
+  height: 30vh;
   padding:20px;
+  padding-left: 20%;
   border-radius: 20px;
 }
-.education-content:nth-child(1){
-  background-color: rgb(29, 29, 29);
-  position: absolute;
-  top:0;
-  left:0;
-  transform: translate(-70%,-70%);
-}
-.education-content:nth-child(2){
-  background-color: rgb(0, 141, 146);
-  position: absolute;
-  top:0;
-  left:0;
-  transform: translate(-30%,80%);
-}
+
 
 .education-context{
   display: flex;
@@ -718,3 +712,17 @@ body::-webkit-scrollbar {
 	margin-bottom: 25px;
 }
 
+
+#hand {
+  animation: handmove 2s infinite linear alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes handmove {
+  from {
+    transform: rotateZ(0deg);
+  }to{
+    transform: rotateZ(10deg);
+  }
+}

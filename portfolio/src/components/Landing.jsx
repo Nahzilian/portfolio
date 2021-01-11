@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import Card from './Card';
 import Modal from './Modal';
-
+import {ReactComponent as EducationSvg} from '../assets/svg/education.svg';
 import Bg1 from '../assets/pictures/code.jpg';
 import Bg2 from '../assets/pictures/plane-wing.jpg';
 import Bg3 from '../assets/pictures/spa.jpg';
 import Bg4 from '../assets/pictures/search.jpg';
 import Bg5 from '../assets/pictures/movie.jpg';
 import Bg6 from '../assets/pictures/working.jpg';
+
 
 
 export default function Landing() {
@@ -137,8 +138,16 @@ export default function Landing() {
                 </div>
                 <div id="education-wrapper">
                     <div id="education">
-                       
-                    </div>
+                        <div className = "education-content frosted-glass">
+                            <EducationSvg id = "animation-guy"/>
+                            <div>
+                                <div>Ryerson University</div>
+                                <div>Bachelor of Science (Honors)</div>
+                                <div>3rd Year Computer Science</div>
+                            </div>
+                        </div>
+                        
+                    </div>  
                 </div>
                 <div id="contact-wrapper">
                     <div id="contact">
