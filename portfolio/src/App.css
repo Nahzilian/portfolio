@@ -42,7 +42,7 @@ body::-webkit-scrollbar {
 }
 #experience-wrapper{
   width: 100vw;
-  height: 200vh;
+  height: 160vh;
   position: relative;
 }
 
@@ -76,6 +76,7 @@ body::-webkit-scrollbar {
 #or::after {
   right: 0;
 }
+
 .contact-card{
   position: relative;
   width: 40vw;
@@ -89,6 +90,11 @@ body::-webkit-scrollbar {
   flex-direction: row;
 }
 
+.education-details{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 #animation-guy{
   position: absolute;
   left:-50%;
@@ -242,7 +248,8 @@ body::-webkit-scrollbar {
     margin-bottom:10px;
     padding-bottom:10px;
     text-decoration: none;
-    background-image:  linear-gradient(219deg, rgb(0, 98, 255) 0%, rgba(255,0,202,1) 100%);
+    background: rgb(246,255,100);
+    background: linear-gradient(90deg, rgba(246,255,100,1) 0%, rgba(253,29,29,1) 60%, rgba(131,58,180,1) 100%);
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: 0% 4px;
@@ -299,10 +306,10 @@ body::-webkit-scrollbar {
     top: 0;
     left: 0;
     z-index: 101;
-    width: 2px;
+    width: 3px;
     margin:60px;
     height: 90vh;
-    background: rgba(255, 255, 255, 0.14);
+    background: rgba(78, 78, 78, 0.137);
 }
 
 .indicator{
@@ -311,7 +318,9 @@ body::-webkit-scrollbar {
 
 .scroll-typography{
     position: fixed;
-    transform: rotate(90deg);   
+    transform: rotate(90deg);
+    color:rgb(255, 0, 255);
+    font-weight: bold;
 }
 
 .glitch-effect {
