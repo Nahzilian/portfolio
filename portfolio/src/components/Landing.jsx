@@ -9,9 +9,10 @@ import Bg4 from '../assets/pictures/search.jpg';
 import Bg5 from '../assets/pictures/movie.jpg';
 import Bg6 from '../assets/pictures/working.jpg';
 
-
+var prevScrollpos = window.pageYOffset;
 
 export default function Landing() {
+
     const bgObj = [
         { bg: Bg1 },
         { bg: Bg2 },
@@ -52,9 +53,17 @@ export default function Landing() {
         transform: "translate(-52%,-50%)",
     };
 
-    window.onscroll = () => {
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar-wrapper").style.top = "0";
+        } else {
+            document.getElementById("navbar-wrapper").style.top = "-60px";
+        }
+        prevScrollpos = currentScrollPos;
         progress();
     }
+
     const progress = () => {
         const scrollTotal = document.documentElement.scrollTop;
         const heightWin = document.documentElement.scrollHeight - document.documentElement.clientHeight;

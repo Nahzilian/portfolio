@@ -145,6 +145,7 @@ body::-webkit-scrollbar {
   z-index: 101;
   float: right;
   margin:20px;
+  transition: top 0.5s;
 }
 
 .nav-items{
