@@ -46,10 +46,10 @@ export default function Landing() {
 
     const progressMainStyle = {
         position: 'absolute',
-        width: "15px",
-        height: "25px",
+        width: "35px",
+        height: "17px",
         top: progressPercentage,
-        transform: "translate(-50%,-50%)",
+        transform: "translate(-52%,-50%)",
     };
 
     window.onscroll = () => {
@@ -58,7 +58,7 @@ export default function Landing() {
     const progress = () => {
         const scrollTotal = document.documentElement.scrollTop;
         const heightWin = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scroll = `${scrollTotal / heightWin * 100}%`;
+        const scroll = `${(scrollTotal / heightWin * 100)}%`;
         setProgressPercentage(scroll);
     }
 
@@ -76,7 +76,7 @@ export default function Landing() {
             </div>
             <div className="progress-bar">
                 <div className="indicator" style={progressMainStyle} />
-                <div className="scroll-typography">SCROLL</div>
+                <div className="scroll-typography">SCROLL <i className="fas fa-arrow-right"></i></div>
             </div>
             <div className="main-content">
                 <div id="introduction-wrapper">
@@ -110,7 +110,7 @@ export default function Landing() {
                         <div className="upper-center-text-wrapper">
                             <div className="main-title underline">Experience</div>
                             <div className="upper-subtitle">
-                                What I do ...
+                                What I have accomplished!
                             </div>
                         </div>
                         <div className="exp-content">
@@ -153,14 +153,14 @@ export default function Landing() {
                                     <div>Ryerson Robotic (R3)</div>
                                 </div>
                             </div>
-                            <br/>
+                            <br />
                             <div className="education-details">
                                 <div className="education-col">
                                     <div><h3>Interest and hobbies</h3></div>
                                     <div>Web design and development</div>
                                     <div>Photography</div>
                                 </div>
-                                <div className="education-col"/>
+                                <div className="education-col" />
                             </div>
                         </div>
 
@@ -175,11 +175,11 @@ export default function Landing() {
                             </div>
                             <div className="right-col">
                                 <strong>Contact me via</strong>
-                                <a href="https://www.linkedin.com/in/doug-nguyen-552b06192/"><i className="fab fa-linkedin fa-3x"></i></a>
+                                <div><a href="https://www.linkedin.com/in/doug-nguyen-552b06192/"><i className="fab fa-linkedin fa-3x"></i></a></div>
                                 <div id="or">or</div>
                                 <strong>Follow me!</strong>
-                                <a href="https://www.instagram.com/duc._.ng/"><i className="fab fa-instagram fa-3x"></i></a>
-                                <a href="https://github.com/Nahzilian"><i class="fab fa-github fa-3x"></i></a>
+                                <div><a href="https://www.instagram.com/duc._.ng/"><i className="fab fa-instagram fa-3x"></i></a></div>
+                                <div><a href="https://github.com/Nahzilian"><i className="fab fa-github fa-3x"></i></a></div>
                             </div>
                         </div>
                     </div>
