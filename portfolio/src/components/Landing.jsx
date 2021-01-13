@@ -74,10 +74,20 @@ export default function Landing() {
     return (
         <div className="main">
             <Modal style={style} closeModal={closeModal} modalStyle={modalStyle} id={currentModalId} />
-            <div id="top" />
+            <div id="home" />
             <div id="navbar-wrapper">
                 <div className="nav-list">
-                    <a href="#top" className="nav-items">Home</a>
+                    <a href="#home" className="nav-items">Home</a>
+                    <a href="#experience-wrapper" className="nav-items">Experience</a>
+                    <a href="#education-wrapper" className="nav-items">Education</a>
+                    <a href="#contact-wrapper" className="nav-items">Contact</a>
+                </div>
+            </div>
+            <div id="navbar-phone">
+                <input className="menu-btn" type="checkbox" id="menu-btn" />
+                <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
+                <div className="navlist-phone">
+                    <a href="#home" className="nav-items">Home</a>
                     <a href="#experience-wrapper" className="nav-items">Experience</a>
                     <a href="#education-wrapper" className="nav-items">Education</a>
                     <a href="#contact-wrapper" className="nav-items">Contact</a>

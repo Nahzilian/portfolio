@@ -31,7 +31,7 @@ body::-webkit-scrollbar {
 :focus{outline: none;}
 
 
-/* Section setup */
+/* Sections setup */
 #introduction{
     animation: fadeIn 1.5s ease forwards;
 }
@@ -41,14 +41,26 @@ body::-webkit-scrollbar {
     height: 100vh;
     position: relative;
 }
+
+#introduction, #experience,#education, #contact{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
 #experience-wrapper{
   height: 160vh;
 }
 
+/* Global setup */
+
 .modal-content .content-side{
   background-color: #11284d;
 }
-
+.education-details, .company-project{
+  justify-content: space-around;
+}
 .contact-card, 
 #education, 
 .education-details, 
@@ -59,6 +71,8 @@ body::-webkit-scrollbar {
   flex-direction: row;
 }
 
+/* Cards: contact + frosted effect*/
+
 .contact-card{
   position: relative;
   width: 40vw;
@@ -66,9 +80,23 @@ body::-webkit-scrollbar {
   border-radius: 20px;
 }
 
-.education-details, .company-project{
-  justify-content: space-around;
+.circle-img{
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+  background-image: url('./assets/svg/profile.svg');
+  background-color: rgba(255, 255, 255, 0.589);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,50%);
 }
+
+.detailed-content{
+  position: relative;
+  padding:10px 20px;
+  width: 100%;
+}
+
 #animation-guy{
   position: absolute;
   left:-50%;
@@ -97,33 +125,11 @@ body::-webkit-scrollbar {
 .right-col * {
   margin: 5px;
 }
-.circle-img{
-  width: 250px;
-  height: 250px;
-  border-radius: 250px;
-  background-image: url('./assets/svg/profile.svg');
-  background-color: rgba(255, 255, 255, 0.589);
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%,50%);
-}
-
-.detailed-content{
-  position: relative;
-  padding:10px 20px;
-  width: 100%;
-}
 
 .main-title{
   font-size: 90px;
 }
 
-#introduction, #experience,#education, #contact{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-}
 
 .main-content{
     display: flex;
@@ -156,6 +162,7 @@ body::-webkit-scrollbar {
   font-weight: bold;
 }
 .nav-items:hover{
+  background-color: rgb(255, 0, 119);
   color:rgb(255, 255, 255);
 }
 
@@ -473,15 +480,6 @@ body::-webkit-scrollbar {
       opacity: 0.25;
     }
   }
-
-.svg-display{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-.svg-blocks{
-    justify-content: center;
-}
 
 
 .exp-content{
